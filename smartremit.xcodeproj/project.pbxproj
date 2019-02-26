@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DE4D69522255531004F6DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D69422255531004F6DE2 /* AppDelegate.swift */; };
+		6DE4D69722255531004F6DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D69622255531004F6DE2 /* ViewController.swift */; };
+		6DE4D69A22255531004F6DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4D69822255531004F6DE2 /* Main.storyboard */; };
+		6DE4D69C22255531004F6DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4D69B22255531004F6DE2 /* Assets.xcassets */; };
+		6DE4D69F22255531004F6DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4D69D22255531004F6DE2 /* LaunchScreen.storyboard */; };
+		6DE4D6AA22255531004F6DE2 /* smartremitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D6A922255531004F6DE2 /* smartremitTests.swift */; };
+		6DE4D6B522255531004F6DE2 /* smartremitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D6B422255531004F6DE2 /* smartremitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DE4D6A622255531004F6DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DE4D68922255531004F6DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DE4D69022255531004F6DE2;
+			remoteInfo = smartremit;
+		};
+		6DE4D6B122255531004F6DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DE4D68922255531004F6DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DE4D69022255531004F6DE2;
+			remoteInfo = smartremit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DE4D69122255531004F6DE2 /* smartremit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartremit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE4D69422255531004F6DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DE4D69622255531004F6DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DE4D69922255531004F6DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DE4D69B22255531004F6DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DE4D69E22255531004F6DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DE4D6A022255531004F6DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE4D6A522255531004F6DE2 /* smartremitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE4D6A922255531004F6DE2 /* smartremitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitTests.swift; sourceTree = "<group>"; };
+		6DE4D6AB22255531004F6DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE4D6B022255531004F6DE2 /* smartremitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE4D6B422255531004F6DE2 /* smartremitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitUITests.swift; sourceTree = "<group>"; };
+		6DE4D6B622255531004F6DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DE4D68E22255531004F6DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4D6A222255531004F6DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4D6AD22255531004F6DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DE4D68822255531004F6DE2 = {
+			isa = PBXGroup;
+			children = (
+				6DE4D69322255531004F6DE2 /* smartremit */,
+				6DE4D6A822255531004F6DE2 /* smartremitTests */,
+				6DE4D6B322255531004F6DE2 /* smartremitUITests */,
+				6DE4D69222255531004F6DE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DE4D69222255531004F6DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4D69122255531004F6DE2 /* smartremit.app */,
+				6DE4D6A522255531004F6DE2 /* smartremitTests.xctest */,
+				6DE4D6B022255531004F6DE2 /* smartremitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DE4D69322255531004F6DE2 /* smartremit */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4D69422255531004F6DE2 /* AppDelegate.swift */,
+				6DE4D69622255531004F6DE2 /* ViewController.swift */,
+				6DE4D69822255531004F6DE2 /* Main.storyboard */,
+				6DE4D69B22255531004F6DE2 /* Assets.xcassets */,
+				6DE4D69D22255531004F6DE2 /* LaunchScreen.storyboard */,
+				6DE4D6A022255531004F6DE2 /* Info.plist */,
+			);
+			path = smartremit;
+			sourceTree = "<group>";
+		};
+		6DE4D6A822255531004F6DE2 /* smartremitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4D6A922255531004F6DE2 /* smartremitTests.swift */,
+				6DE4D6AB22255531004F6DE2 /* Info.plist */,
+			);
+			path = smartremitTests;
+			sourceTree = "<group>";
+		};
+		6DE4D6B322255531004F6DE2 /* smartremitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4D6B422255531004F6DE2 /* smartremitUITests.swift */,
+				6DE4D6B622255531004F6DE2 /* Info.plist */,
+			);
+			path = smartremitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DE4D69022255531004F6DE2 /* smartremit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE4D6B922255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremit" */;
+			buildPhases = (
+				6DE4D68D22255531004F6DE2 /* Sources */,
+				6DE4D68E22255531004F6DE2 /* Frameworks */,
+				6DE4D68F22255531004F6DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartremit;
+			productName = smartremit;
+			productReference = 6DE4D69122255531004F6DE2 /* smartremit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DE4D6A422255531004F6DE2 /* smartremitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE4D6BC22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitTests" */;
+			buildPhases = (
+				6DE4D6A122255531004F6DE2 /* Sources */,
+				6DE4D6A222255531004F6DE2 /* Frameworks */,
+				6DE4D6A322255531004F6DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE4D6A722255531004F6DE2 /* PBXTargetDependency */,
+			);
+			name = smartremitTests;
+			productName = smartremitTests;
+			productReference = 6DE4D6A522255531004F6DE2 /* smartremitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DE4D6AF22255531004F6DE2 /* smartremitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE4D6BF22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitUITests" */;
+			buildPhases = (
+				6DE4D6AC22255531004F6DE2 /* Sources */,
+				6DE4D6AD22255531004F6DE2 /* Frameworks */,
+				6DE4D6AE22255531004F6DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE4D6B222255531004F6DE2 /* PBXTargetDependency */,
+			);
+			name = smartremitUITests;
+			productName = smartremitUITests;
+			productReference = 6DE4D6B022255531004F6DE2 /* smartremitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DE4D68922255531004F6DE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = NazTech;
+				TargetAttributes = {
+					6DE4D69022255531004F6DE2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6DE4D6A422255531004F6DE2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6DE4D69022255531004F6DE2;
+					};
+					6DE4D6AF22255531004F6DE2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6DE4D69022255531004F6DE2;
+					};
+				};
+			};
+			buildConfigurationList = 6DE4D68C22255531004F6DE2 /* Build configuration list for PBXProject "smartremit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DE4D68822255531004F6DE2;
+			productRefGroup = 6DE4D69222255531004F6DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DE4D69022255531004F6DE2 /* smartremit */,
+				6DE4D6A422255531004F6DE2 /* smartremitTests */,
+				6DE4D6AF22255531004F6DE2 /* smartremitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DE4D68F22255531004F6DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE4D69F22255531004F6DE2 /* LaunchScreen.storyboard in Resources */,
+				6DE4D69C22255531004F6DE2 /* Assets.xcassets in Resources */,
+				6DE4D69A22255531004F6DE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4D6A322255531004F6DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4D6AE22255531004F6DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DE4D68D22255531004F6DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE4D69722255531004F6DE2 /* ViewController.swift in Sources */,
+				6DE4D69522255531004F6DE2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4D6A122255531004F6DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE4D6AA22255531004F6DE2 /* smartremitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE4D6AC22255531004F6DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE4D6B522255531004F6DE2 /* smartremitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DE4D6A722255531004F6DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DE4D69022255531004F6DE2 /* smartremit */;
+			targetProxy = 6DE4D6A622255531004F6DE2 /* PBXContainerItemProxy */;
+		};
+		6DE4D6B222255531004F6DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DE4D69022255531004F6DE2 /* smartremit */;
+			targetProxy = 6DE4D6B122255531004F6DE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DE4D69822255531004F6DE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DE4D69922255531004F6DE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DE4D69D22255531004F6DE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DE4D69E22255531004F6DE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DE4D6B722255531004F6DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DE4D6B822255531004F6DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DE4D6BA22255531004F6DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartremit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DE4D6BB22255531004F6DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartremit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DE4D6BD22255531004F6DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartremitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartremit.app/smartremit";
+			};
+			name = Debug;
+		};
+		6DE4D6BE22255531004F6DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartremitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartremit.app/smartremit";
+			};
+			name = Release;
+		};
+		6DE4D6C022255531004F6DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartremitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartremit;
+			};
+			name = Debug;
+		};
+		6DE4D6C122255531004F6DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartremitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartremit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DE4D68C22255531004F6DE2 /* Build configuration list for PBXProject "smartremit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4D6B722255531004F6DE2 /* Debug */,
+				6DE4D6B822255531004F6DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE4D6B922255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4D6BA22255531004F6DE2 /* Debug */,
+				6DE4D6BB22255531004F6DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE4D6BC22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4D6BD22255531004F6DE2 /* Debug */,
+				6DE4D6BE22255531004F6DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE4D6BF22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE4D6C022255531004F6DE2 /* Debug */,
+				6DE4D6C122255531004F6DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DE4D68922255531004F6DE2 /* Project object */;
+}
