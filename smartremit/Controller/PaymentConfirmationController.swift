@@ -1,14 +1,14 @@
 //
-//  WrongCredentialsXib.swift
+//  PaymentConfirmationController.swift
 //  smartremit
 //
-//  Created by Shajedul Islam on 23/2/19.
+//  Created by Demo User on 26/2/19.
 //  Copyright © 2019 NazTech. All rights reserved.
 //
 
 import UIKit
 
-class WrongCredentialsXib: UIViewController {
+class PaymentConfirmationController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,6 @@ class WrongCredentialsXib: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func okPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-
 
     /*
     // MARK: - Navigation

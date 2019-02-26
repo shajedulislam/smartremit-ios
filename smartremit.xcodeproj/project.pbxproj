@@ -36,9 +36,6 @@
 		6D649F132215481B0038CF0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D649F112215481B0038CF0F /* LaunchScreen.storyboard */; };
 		6D649F1E2215481B0038CF0F /* smartremitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F1D2215481B0038CF0F /* smartremitTests.swift */; };
 		6D649F292215481B0038CF0F /* smartremitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F282215481B0038CF0F /* smartremitUITests.swift */; };
-		6D93830422253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */; };
-		6D93830522253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */; };
-		6D93830622253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */; };
 		6D94A3A522169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
 		6D94A3A622169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
 		6D94A3A722169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
@@ -60,6 +57,7 @@
 		6DB1447E22219A06004943E2 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DB1447D22219A06004943E2 /* login.json */; };
 		6DCFF22E221B0EB900C2C971 /* CustomeImageViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCFF22D221B0EB900C2C971 /* CustomeImageViewDesign.swift */; };
 		6DFAE8932223D5DF00E4D813 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFAE8922223D5DF00E4D813 /* Constants.swift */; };
+		D89B0E7222253B91008257F0 /* PaymentConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B0E7122253B91008257F0 /* PaymentConfirmationController.swift */; };
 		ED1AC94F221A8DAF00CAE3F1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1AC94E221A8DAF00CAE3F1 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,7 +106,6 @@
 		6D649F242215481B0038CF0F /* smartremitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D649F282215481B0038CF0F /* smartremitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitUITests.swift; sourceTree = "<group>"; };
 		6D649F2A2215481B0038CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemittanceSummaryController.swift; sourceTree = "<group>"; };
 		6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldHalfRound.swift; sourceTree = "<group>"; };
 		6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonRounded.swift; sourceTree = "<group>"; };
 		6D992260221ABADB007BE8D3 /* UploadFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileController.swift; sourceTree = "<group>"; };
@@ -126,6 +123,7 @@
 		6DB1447D22219A06004943E2 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 		6DCFF22D221B0EB900C2C971 /* CustomeImageViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeImageViewDesign.swift; sourceTree = "<group>"; };
 		6DFAE8922223D5DF00E4D813 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D89B0E7122253B91008257F0 /* PaymentConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationController.swift; sourceTree = "<group>"; };
 		ED1AC94E221A8DAF00CAE3F1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,7 +251,7 @@
 				6DA81D25221BCD9800DC82FB /* AddRecipientController.swift */,
 				6DA744EE221C54BF0001AD72 /* LogoutController.swift */,
 				6DB1446B22218A28004943E2 /* WrongCredentialsXib.swift */,
-				6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */,
+				D89B0E7122253B91008257F0 /* PaymentConfirmationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -440,6 +438,7 @@
 				6DA74531221C68850001AD72 /* CustomLineByView.swift in Sources */,
 				6D992263221ACF28007BE8D3 /* BankDetailsController.swift in Sources */,
 				ED1AC94F221A8DAF00CAE3F1 /* TableViewCell.swift in Sources */,
+				D89B0E7222253B91008257F0 /* PaymentConfirmationController.swift in Sources */,
 				6DA744F0221C54BF0001AD72 /* LogoutController.swift in Sources */,
 				6D94A3A822169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
 				6DFAE8932223D5DF00E4D813 /* Constants.swift in Sources */,
@@ -459,7 +458,6 @@
 				6D992261221ABADB007BE8D3 /* UploadFileController.swift in Sources */,
 				6D2494982217D39700F600C8 /* SWRevealViewController.m in Sources */,
 				6D24949C2217E0FC00F600C8 /* LoginController.swift in Sources */,
-				6D93830422253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */,
 				6D04D86C22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
 				6D2494A42218414600F600C8 /* SidemenuController.swift in Sources */,
 				6D2494A8221863A300F600C8 /* MenuTableViewCell.swift in Sources */,
@@ -478,7 +476,6 @@
 				6D04D86522230DB400F2D234 /* Login.swift in Sources */,
 				6D649F1E2215481B0038CF0F /* smartremitTests.swift in Sources */,
 				6D04D86D22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
-				6D93830522253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */,
 				6D04D87122230E9800F2D234 /* TransactionData.swift in Sources */,
 				6D04D86922230DE000F2D234 /* RegistrationData.swift in Sources */,
 				6D94A3A922169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
@@ -494,7 +491,6 @@
 				6D04D86622230DB400F2D234 /* Login.swift in Sources */,
 				6D649F292215481B0038CF0F /* smartremitUITests.swift in Sources */,
 				6D04D86E22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
-				6D93830622253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */,
 				6D04D87222230E9800F2D234 /* TransactionData.swift in Sources */,
 				6D04D86A22230DE000F2D234 /* RegistrationData.swift in Sources */,
 				6D94A3AA22169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
