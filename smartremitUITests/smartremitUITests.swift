@@ -1,14 +1,14 @@
 //
-//  smartremitUITests.swift
-//  smartremitUITests
+//  Smart_RemitUITests.swift
+//  Smart RemitUITests
 //
-//  Created by Shajedul Islam on 26/2/19.
+//  Created by Shajedul Islam on 14/2/19.
 //  Copyright © 2019 NazTech. All rights reserved.
 //
 
 import XCTest
 
-class smartremitUITests: XCTestCase {
+class smartemitUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

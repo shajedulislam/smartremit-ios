@@ -7,64 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DE4D69522255531004F6DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D69422255531004F6DE2 /* AppDelegate.swift */; };
-		6DE4D69722255531004F6DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D69622255531004F6DE2 /* ViewController.swift */; };
-		6DE4D69A22255531004F6DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4D69822255531004F6DE2 /* Main.storyboard */; };
-		6DE4D69C22255531004F6DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4D69B22255531004F6DE2 /* Assets.xcassets */; };
-		6DE4D69F22255531004F6DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4D69D22255531004F6DE2 /* LaunchScreen.storyboard */; };
-		6DE4D6AA22255531004F6DE2 /* smartremitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D6A922255531004F6DE2 /* smartremitTests.swift */; };
-		6DE4D6B522255531004F6DE2 /* smartremitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4D6B422255531004F6DE2 /* smartremitUITests.swift */; };
+		6D04D86422230DB400F2D234 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86322230DB400F2D234 /* Login.swift */; };
+		6D04D86522230DB400F2D234 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86322230DB400F2D234 /* Login.swift */; };
+		6D04D86622230DB400F2D234 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86322230DB400F2D234 /* Login.swift */; };
+		6D04D86822230DE000F2D234 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86722230DE000F2D234 /* RegistrationData.swift */; };
+		6D04D86922230DE000F2D234 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86722230DE000F2D234 /* RegistrationData.swift */; };
+		6D04D86A22230DE000F2D234 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86722230DE000F2D234 /* RegistrationData.swift */; };
+		6D04D86C22230E1000F2D234 /* BeneficiaryListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */; };
+		6D04D86D22230E1000F2D234 /* BeneficiaryListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */; };
+		6D04D86E22230E1000F2D234 /* BeneficiaryListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */; };
+		6D04D87022230E9800F2D234 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* TransactionData.swift */; };
+		6D04D87122230E9800F2D234 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* TransactionData.swift */; };
+		6D04D87222230E9800F2D234 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* TransactionData.swift */; };
+		6D04D8742223187200F2D234 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D8732223187200F2D234 /* LoginService.swift */; };
+		6D04D8752223187200F2D234 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D8732223187200F2D234 /* LoginService.swift */; };
+		6D04D8762223187200F2D234 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D8732223187200F2D234 /* LoginService.swift */; };
+		6D2494982217D39700F600C8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494962217D39700F600C8 /* SWRevealViewController.m */; };
+		6D24949C2217E0FC00F600C8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24949B2217E0FC00F600C8 /* LoginController.swift */; };
+		6D2494A22218166400F600C8 /* Login_verificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494A12218166400F600C8 /* Login_verificationController.swift */; };
+		6D2494A42218414600F600C8 /* SidemenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494A32218414600F600C8 /* SidemenuController.swift */; };
+		6D2494A62218527E00F600C8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494A52218527E00F600C8 /* GradientView.swift */; };
+		6D2494A8221863A300F600C8 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494A7221863A300F600C8 /* MenuTableViewCell.swift */; };
+		6D58E5182216BE6E00E40D18 /* CustomButtonHalfRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58E5172216BE6E00E40D18 /* CustomButtonHalfRounded.swift */; };
+		6D649F09221548190038CF0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F08221548190038CF0F /* AppDelegate.swift */; };
+		6D649F0B221548190038CF0F /* GetstartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F0A221548190038CF0F /* GetstartedController.swift */; };
+		6D649F0E221548190038CF0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D649F0C221548190038CF0F /* Main.storyboard */; };
+		6D649F102215481B0038CF0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D649F0F2215481B0038CF0F /* Assets.xcassets */; };
+		6D649F132215481B0038CF0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D649F112215481B0038CF0F /* LaunchScreen.storyboard */; };
+		6D649F1E2215481B0038CF0F /* smartremitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F1D2215481B0038CF0F /* smartremitTests.swift */; };
+		6D649F292215481B0038CF0F /* smartremitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F282215481B0038CF0F /* smartremitUITests.swift */; };
+		6D93830422253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */; };
+		6D93830522253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */; };
+		6D93830622253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */; };
+		6D94A3A522169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
+		6D94A3A622169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
+		6D94A3A722169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
+		6D94A3A822169A6B00D34EFE /* CustomButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */; };
+		6D94A3A922169A6B00D34EFE /* CustomButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */; };
+		6D94A3AA22169A6B00D34EFE /* CustomButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */; };
+		6D992261221ABADB007BE8D3 /* UploadFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D992260221ABADB007BE8D3 /* UploadFileController.swift */; };
+		6D992263221ACF28007BE8D3 /* BankDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D992262221ACF28007BE8D3 /* BankDetailsController.swift */; };
+		6DA744F0221C54BF0001AD72 /* LogoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA744EE221C54BF0001AD72 /* LogoutController.swift */; };
+		6DA744F1221C54BF0001AD72 /* LogoutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA744EF221C54BF0001AD72 /* LogoutController.xib */; };
+		6DA74531221C68850001AD72 /* CustomLineByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA74530221C68850001AD72 /* CustomLineByView.swift */; };
+		6DA81D26221BCD9800DC82FB /* AddRecipientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA81D25221BCD9800DC82FB /* AddRecipientController.swift */; };
+		6DA81D28221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA81D27221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift */; };
+		6DB12DB12219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB12DB02219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift */; };
+		6DB12DB52219C24700D8EBE7 /* BeneficiraryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB12DB42219C24700D8EBE7 /* BeneficiraryListController.swift */; };
+		6DB12DB72219D71300D8EBE7 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB12DB62219D71300D8EBE7 /* ResetPasswordController.swift */; };
+		6DB1446D22218A28004943E2 /* WrongCredentialsXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1446B22218A28004943E2 /* WrongCredentialsXib.swift */; };
+		6DB1446E22218A28004943E2 /* WrongCredentialsXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB1446C22218A28004943E2 /* WrongCredentialsXib.xib */; };
+		6DB1447E22219A06004943E2 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DB1447D22219A06004943E2 /* login.json */; };
+		6DCFF22E221B0EB900C2C971 /* CustomeImageViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCFF22D221B0EB900C2C971 /* CustomeImageViewDesign.swift */; };
+		6DFAE8932223D5DF00E4D813 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFAE8922223D5DF00E4D813 /* Constants.swift */; };
+		ED1AC94F221A8DAF00CAE3F1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1AC94E221A8DAF00CAE3F1 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6DE4D6A622255531004F6DE2 /* PBXContainerItemProxy */ = {
+		6D649F1A2215481B0038CF0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6DE4D68922255531004F6DE2 /* Project object */;
+			containerPortal = 6D649EFD221548190038CF0F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6DE4D69022255531004F6DE2;
-			remoteInfo = smartremit;
+			remoteGlobalIDString = 6D649F04221548190038CF0F;
+			remoteInfo = "Smart Remit";
 		};
-		6DE4D6B122255531004F6DE2 /* PBXContainerItemProxy */ = {
+		6D649F252215481B0038CF0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6DE4D68922255531004F6DE2 /* Project object */;
+			containerPortal = 6D649EFD221548190038CF0F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6DE4D69022255531004F6DE2;
-			remoteInfo = smartremit;
+			remoteGlobalIDString = 6D649F04221548190038CF0F;
+			remoteInfo = "Smart Remit";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6DE4D69122255531004F6DE2 /* smartremit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartremit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DE4D69422255531004F6DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DE4D69622255531004F6DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6DE4D69922255531004F6DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6DE4D69B22255531004F6DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6DE4D69E22255531004F6DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6DE4D6A022255531004F6DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DE4D6A522255531004F6DE2 /* smartremitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DE4D6A922255531004F6DE2 /* smartremitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitTests.swift; sourceTree = "<group>"; };
-		6DE4D6AB22255531004F6DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DE4D6B022255531004F6DE2 /* smartremitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DE4D6B422255531004F6DE2 /* smartremitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitUITests.swift; sourceTree = "<group>"; };
-		6DE4D6B622255531004F6DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D04D86322230DB400F2D234 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6D04D86722230DE000F2D234 /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
+		6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiaryListData.swift; sourceTree = "<group>"; };
+		6D04D86F22230E9800F2D234 /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
+		6D04D8732223187200F2D234 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		6D2494952217D39600F600C8 /* smartremit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smartremit-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D2494962217D39700F600C8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		6D2494972217D39700F600C8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		6D24949B2217E0FC00F600C8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		6D2494A12218166400F600C8 /* Login_verificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_verificationController.swift; sourceTree = "<group>"; };
+		6D2494A32218414600F600C8 /* SidemenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuController.swift; sourceTree = "<group>"; };
+		6D2494A52218527E00F600C8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		6D2494A7221863A300F600C8 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		6D58E5172216BE6E00E40D18 /* CustomButtonHalfRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonHalfRounded.swift; sourceTree = "<group>"; };
+		6D649F05221548190038CF0F /* smartremit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartremit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D649F08221548190038CF0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D649F0A221548190038CF0F /* GetstartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetstartedController.swift; sourceTree = "<group>"; };
+		6D649F0D221548190038CF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D649F0F2215481B0038CF0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D649F122215481B0038CF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D649F142215481B0038CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D649F192215481B0038CF0F /* smartremitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D649F1D2215481B0038CF0F /* smartremitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitTests.swift; sourceTree = "<group>"; };
+		6D649F1F2215481B0038CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D649F242215481B0038CF0F /* smartremitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D649F282215481B0038CF0F /* smartremitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitUITests.swift; sourceTree = "<group>"; };
+		6D649F2A2215481B0038CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemittanceSummaryController.swift; sourceTree = "<group>"; };
+		6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldHalfRound.swift; sourceTree = "<group>"; };
+		6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonRounded.swift; sourceTree = "<group>"; };
+		6D992260221ABADB007BE8D3 /* UploadFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileController.swift; sourceTree = "<group>"; };
+		6D992262221ACF28007BE8D3 /* BankDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsController.swift; sourceTree = "<group>"; };
+		6DA744EE221C54BF0001AD72 /* LogoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutController.swift; sourceTree = "<group>"; };
+		6DA744EF221C54BF0001AD72 /* LogoutController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutController.xib; sourceTree = "<group>"; };
+		6DA74530221C68850001AD72 /* CustomLineByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLineByView.swift; sourceTree = "<group>"; };
+		6DA81D25221BCD9800DC82FB /* AddRecipientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipientController.swift; sourceTree = "<group>"; };
+		6DA81D27221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldHalfRoundedClear.swift; sourceTree = "<group>"; };
+		6DB12DB02219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonHalfRoundedPink.swift; sourceTree = "<group>"; };
+		6DB12DB42219C24700D8EBE7 /* BeneficiraryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiraryListController.swift; sourceTree = "<group>"; };
+		6DB12DB62219D71300D8EBE7 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
+		6DB1446B22218A28004943E2 /* WrongCredentialsXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongCredentialsXib.swift; sourceTree = "<group>"; };
+		6DB1446C22218A28004943E2 /* WrongCredentialsXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongCredentialsXib.xib; sourceTree = "<group>"; };
+		6DB1447D22219A06004943E2 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		6DCFF22D221B0EB900C2C971 /* CustomeImageViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeImageViewDesign.swift; sourceTree = "<group>"; };
+		6DFAE8922223D5DF00E4D813 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED1AC94E221A8DAF00CAE3F1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6DE4D68E22255531004F6DE2 /* Frameworks */ = {
+		6D649F02221548190038CF0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE4D6A222255531004F6DE2 /* Frameworks */ = {
+		6D649F162215481B0038CF0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE4D6AD22255531004F6DE2 /* Frameworks */ = {
+		6D649F212215481B0038CF0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,137 +154,235 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6DE4D68822255531004F6DE2 = {
+		6D04D86122230C3F00F2D234 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				6DE4D69322255531004F6DE2 /* smartremit */,
-				6DE4D6A822255531004F6DE2 /* smartremitTests */,
-				6DE4D6B322255531004F6DE2 /* smartremitUITests */,
-				6DE4D69222255531004F6DE2 /* Products */,
+				6D04D8732223187200F2D234 /* LoginService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6D04D86222230C4900F2D234 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6DFAE8922223D5DF00E4D813 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6D2494942217D17D00F600C8 /* Supporting_files */ = {
+			isa = PBXGroup;
+			children = (
+				6D2494972217D39700F600C8 /* SWRevealViewController.h */,
+				6D2494962217D39700F600C8 /* SWRevealViewController.m */,
+				6D2494952217D39600F600C8 /* smartremit-Bridging-Header.h */,
+			);
+			path = Supporting_files;
+			sourceTree = "<group>";
+		};
+		6D649EFC221548190038CF0F = {
+			isa = PBXGroup;
+			children = (
+				6D649F07221548190038CF0F /* smartremit */,
+				6D649F1C2215481B0038CF0F /* smartremitTests */,
+				6D649F272215481B0038CF0F /* smartremitUITests */,
+				6D649F06221548190038CF0F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6DE4D69222255531004F6DE2 /* Products */ = {
+		6D649F06221548190038CF0F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DE4D69122255531004F6DE2 /* smartremit.app */,
-				6DE4D6A522255531004F6DE2 /* smartremitTests.xctest */,
-				6DE4D6B022255531004F6DE2 /* smartremitUITests.xctest */,
+				6D649F05221548190038CF0F /* smartremit.app */,
+				6D649F192215481B0038CF0F /* smartremitTests.xctest */,
+				6D649F242215481B0038CF0F /* smartremitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6DE4D69322255531004F6DE2 /* smartremit */ = {
+		6D649F07221548190038CF0F /* smartremit */ = {
 			isa = PBXGroup;
 			children = (
-				6DE4D69422255531004F6DE2 /* AppDelegate.swift */,
-				6DE4D69622255531004F6DE2 /* ViewController.swift */,
-				6DE4D69822255531004F6DE2 /* Main.storyboard */,
-				6DE4D69B22255531004F6DE2 /* Assets.xcassets */,
-				6DE4D69D22255531004F6DE2 /* LaunchScreen.storyboard */,
-				6DE4D6A022255531004F6DE2 /* Info.plist */,
+				6D2494942217D17D00F600C8 /* Supporting_files */,
+				6DA744ED221C54A20001AD72 /* Xib */,
+				6DB1447022219507004943E2 /* Jsonfiles */,
+				6D04D86222230C4900F2D234 /* Utilities */,
+				6D04D86122230C3F00F2D234 /* Services */,
+				ED1AC94D221A83FC00CAE3F1 /* Model */,
+				6D649F372215487F0038CF0F /* View */,
+				6D649F362215485D0038CF0F /* Controller */,
+				6D649F08221548190038CF0F /* AppDelegate.swift */,
+				6D649F0C221548190038CF0F /* Main.storyboard */,
+				6D649F0F2215481B0038CF0F /* Assets.xcassets */,
+				6D649F112215481B0038CF0F /* LaunchScreen.storyboard */,
+				6D649F142215481B0038CF0F /* Info.plist */,
 			);
 			path = smartremit;
 			sourceTree = "<group>";
 		};
-		6DE4D6A822255531004F6DE2 /* smartremitTests */ = {
+		6D649F1C2215481B0038CF0F /* smartremitTests */ = {
 			isa = PBXGroup;
 			children = (
-				6DE4D6A922255531004F6DE2 /* smartremitTests.swift */,
-				6DE4D6AB22255531004F6DE2 /* Info.plist */,
+				6D649F1D2215481B0038CF0F /* smartremitTests.swift */,
+				6D649F1F2215481B0038CF0F /* Info.plist */,
 			);
 			path = smartremitTests;
 			sourceTree = "<group>";
 		};
-		6DE4D6B322255531004F6DE2 /* smartremitUITests */ = {
+		6D649F272215481B0038CF0F /* smartremitUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6DE4D6B422255531004F6DE2 /* smartremitUITests.swift */,
-				6DE4D6B622255531004F6DE2 /* Info.plist */,
+				6D649F282215481B0038CF0F /* smartremitUITests.swift */,
+				6D649F2A2215481B0038CF0F /* Info.plist */,
 			);
 			path = smartremitUITests;
+			sourceTree = "<group>";
+		};
+		6D649F362215485D0038CF0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D649F0A221548190038CF0F /* GetstartedController.swift */,
+				6D24949B2217E0FC00F600C8 /* LoginController.swift */,
+				6D2494A12218166400F600C8 /* Login_verificationController.swift */,
+				6D2494A32218414600F600C8 /* SidemenuController.swift */,
+				6D2494A7221863A300F600C8 /* MenuTableViewCell.swift */,
+				6DB12DB42219C24700D8EBE7 /* BeneficiraryListController.swift */,
+				6DB12DB62219D71300D8EBE7 /* ResetPasswordController.swift */,
+				6D992260221ABADB007BE8D3 /* UploadFileController.swift */,
+				6D992262221ACF28007BE8D3 /* BankDetailsController.swift */,
+				6DA81D25221BCD9800DC82FB /* AddRecipientController.swift */,
+				6DA744EE221C54BF0001AD72 /* LogoutController.swift */,
+				6DB1446B22218A28004943E2 /* WrongCredentialsXib.swift */,
+				6D93830322253ACC00D93FB1 /* RemittanceSummaryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D649F372215487F0038CF0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED1AC94E221A8DAF00CAE3F1 /* TableViewCell.swift */,
+				6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */,
+				6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */,
+				6D58E5172216BE6E00E40D18 /* CustomButtonHalfRounded.swift */,
+				6D2494A52218527E00F600C8 /* GradientView.swift */,
+				6DB12DB02219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift */,
+				6DCFF22D221B0EB900C2C971 /* CustomeImageViewDesign.swift */,
+				6DA81D27221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift */,
+				6DA74530221C68850001AD72 /* CustomLineByView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DA744ED221C54A20001AD72 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				6DA744EF221C54BF0001AD72 /* LogoutController.xib */,
+				6DB1446C22218A28004943E2 /* WrongCredentialsXib.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		6DB1447022219507004943E2 /* Jsonfiles */ = {
+			isa = PBXGroup;
+			children = (
+				6DB1447D22219A06004943E2 /* login.json */,
+			);
+			path = Jsonfiles;
+			sourceTree = "<group>";
+		};
+		ED1AC94D221A83FC00CAE3F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D04D86322230DB400F2D234 /* Login.swift */,
+				6D04D86722230DE000F2D234 /* RegistrationData.swift */,
+				6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */,
+				6D04D86F22230E9800F2D234 /* TransactionData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DE4D69022255531004F6DE2 /* smartremit */ = {
+		6D649F04221548190038CF0F /* smartremit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DE4D6B922255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremit" */;
+			buildConfigurationList = 6D649F2D2215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremit" */;
 			buildPhases = (
-				6DE4D68D22255531004F6DE2 /* Sources */,
-				6DE4D68E22255531004F6DE2 /* Frameworks */,
-				6DE4D68F22255531004F6DE2 /* Resources */,
+				6D649F01221548190038CF0F /* Sources */,
+				6D649F02221548190038CF0F /* Frameworks */,
+				6D649F03221548190038CF0F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = smartremit;
-			productName = smartremit;
-			productReference = 6DE4D69122255531004F6DE2 /* smartremit.app */;
+			productName = "Smart Remit";
+			productReference = 6D649F05221548190038CF0F /* smartremit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6DE4D6A422255531004F6DE2 /* smartremitTests */ = {
+		6D649F182215481B0038CF0F /* smartremitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DE4D6BC22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitTests" */;
+			buildConfigurationList = 6D649F302215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitTests" */;
 			buildPhases = (
-				6DE4D6A122255531004F6DE2 /* Sources */,
-				6DE4D6A222255531004F6DE2 /* Frameworks */,
-				6DE4D6A322255531004F6DE2 /* Resources */,
+				6D649F152215481B0038CF0F /* Sources */,
+				6D649F162215481B0038CF0F /* Frameworks */,
+				6D649F172215481B0038CF0F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DE4D6A722255531004F6DE2 /* PBXTargetDependency */,
+				6D649F1B2215481B0038CF0F /* PBXTargetDependency */,
 			);
 			name = smartremitTests;
-			productName = smartremitTests;
-			productReference = 6DE4D6A522255531004F6DE2 /* smartremitTests.xctest */;
+			productName = "Smart RemitTests";
+			productReference = 6D649F192215481B0038CF0F /* smartremitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6DE4D6AF22255531004F6DE2 /* smartremitUITests */ = {
+		6D649F232215481B0038CF0F /* smartremitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DE4D6BF22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitUITests" */;
+			buildConfigurationList = 6D649F332215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitUITests" */;
 			buildPhases = (
-				6DE4D6AC22255531004F6DE2 /* Sources */,
-				6DE4D6AD22255531004F6DE2 /* Frameworks */,
-				6DE4D6AE22255531004F6DE2 /* Resources */,
+				6D649F202215481B0038CF0F /* Sources */,
+				6D649F212215481B0038CF0F /* Frameworks */,
+				6D649F222215481B0038CF0F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DE4D6B222255531004F6DE2 /* PBXTargetDependency */,
+				6D649F262215481B0038CF0F /* PBXTargetDependency */,
 			);
 			name = smartremitUITests;
-			productName = smartremitUITests;
-			productReference = 6DE4D6B022255531004F6DE2 /* smartremitUITests.xctest */;
+			productName = "Smart RemitUITests";
+			productReference = 6D649F242215481B0038CF0F /* smartremitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6DE4D68922255531004F6DE2 /* Project object */ = {
+		6D649EFD221548190038CF0F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = NazTech;
 				TargetAttributes = {
-					6DE4D69022255531004F6DE2 = {
+					6D649F04221548190038CF0F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
-					6DE4D6A422255531004F6DE2 = {
+					6D649F182215481B0038CF0F = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 6DE4D69022255531004F6DE2;
+						TestTargetID = 6D649F04221548190038CF0F;
 					};
-					6DE4D6AF22255531004F6DE2 = {
+					6D649F232215481B0038CF0F = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 6DE4D69022255531004F6DE2;
+						TestTargetID = 6D649F04221548190038CF0F;
 					};
 				};
 			};
-			buildConfigurationList = 6DE4D68C22255531004F6DE2 /* Build configuration list for PBXProject "smartremit" */;
+			buildConfigurationList = 6D649F00221548190038CF0F /* Build configuration list for PBXProject "smartremit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +390,40 @@
 				en,
 				Base,
 			);
-			mainGroup = 6DE4D68822255531004F6DE2;
-			productRefGroup = 6DE4D69222255531004F6DE2 /* Products */;
+			mainGroup = 6D649EFC221548190038CF0F;
+			productRefGroup = 6D649F06221548190038CF0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DE4D69022255531004F6DE2 /* smartremit */,
-				6DE4D6A422255531004F6DE2 /* smartremitTests */,
-				6DE4D6AF22255531004F6DE2 /* smartremitUITests */,
+				6D649F04221548190038CF0F /* smartremit */,
+				6D649F182215481B0038CF0F /* smartremitTests */,
+				6D649F232215481B0038CF0F /* smartremitUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6DE4D68F22255531004F6DE2 /* Resources */ = {
+		6D649F03221548190038CF0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE4D69F22255531004F6DE2 /* LaunchScreen.storyboard in Resources */,
-				6DE4D69C22255531004F6DE2 /* Assets.xcassets in Resources */,
-				6DE4D69A22255531004F6DE2 /* Main.storyboard in Resources */,
+				6D649F132215481B0038CF0F /* LaunchScreen.storyboard in Resources */,
+				6D649F102215481B0038CF0F /* Assets.xcassets in Resources */,
+				6DB1446E22218A28004943E2 /* WrongCredentialsXib.xib in Resources */,
+				6D649F0E221548190038CF0F /* Main.storyboard in Resources */,
+				6DA744F1221C54BF0001AD72 /* LogoutController.xib in Resources */,
+				6DB1447E22219A06004943E2 /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE4D6A322255531004F6DE2 /* Resources */ = {
+		6D649F172215481B0038CF0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE4D6AE22255531004F6DE2 /* Resources */ = {
+		6D649F222215481B0038CF0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +433,103 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6DE4D68D22255531004F6DE2 /* Sources */ = {
+		6D649F01221548190038CF0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE4D69722255531004F6DE2 /* ViewController.swift in Sources */,
-				6DE4D69522255531004F6DE2 /* AppDelegate.swift in Sources */,
+				6DA74531221C68850001AD72 /* CustomLineByView.swift in Sources */,
+				6D992263221ACF28007BE8D3 /* BankDetailsController.swift in Sources */,
+				ED1AC94F221A8DAF00CAE3F1 /* TableViewCell.swift in Sources */,
+				6DA744F0221C54BF0001AD72 /* LogoutController.swift in Sources */,
+				6D94A3A822169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
+				6DFAE8932223D5DF00E4D813 /* Constants.swift in Sources */,
+				6D94A3A522169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */,
+				6D04D87022230E9800F2D234 /* TransactionData.swift in Sources */,
+				6D2494A62218527E00F600C8 /* GradientView.swift in Sources */,
+				6DB12DB12219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift in Sources */,
+				6D649F0B221548190038CF0F /* GetstartedController.swift in Sources */,
+				6D649F09221548190038CF0F /* AppDelegate.swift in Sources */,
+				6D04D86422230DB400F2D234 /* Login.swift in Sources */,
+				6D2494A22218166400F600C8 /* Login_verificationController.swift in Sources */,
+				6D58E5182216BE6E00E40D18 /* CustomButtonHalfRounded.swift in Sources */,
+				6DA81D28221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift in Sources */,
+				6DB12DB72219D71300D8EBE7 /* ResetPasswordController.swift in Sources */,
+				6D04D86822230DE000F2D234 /* RegistrationData.swift in Sources */,
+				6DB1446D22218A28004943E2 /* WrongCredentialsXib.swift in Sources */,
+				6D992261221ABADB007BE8D3 /* UploadFileController.swift in Sources */,
+				6D2494982217D39700F600C8 /* SWRevealViewController.m in Sources */,
+				6D24949C2217E0FC00F600C8 /* LoginController.swift in Sources */,
+				6D93830422253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */,
+				6D04D86C22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
+				6D2494A42218414600F600C8 /* SidemenuController.swift in Sources */,
+				6D2494A8221863A300F600C8 /* MenuTableViewCell.swift in Sources */,
+				6DB12DB52219C24700D8EBE7 /* BeneficiraryListController.swift in Sources */,
+				6DCFF22E221B0EB900C2C971 /* CustomeImageViewDesign.swift in Sources */,
+				6DA81D26221BCD9800DC82FB /* AddRecipientController.swift in Sources */,
+				6D04D8742223187200F2D234 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE4D6A122255531004F6DE2 /* Sources */ = {
+		6D649F152215481B0038CF0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE4D6AA22255531004F6DE2 /* smartremitTests.swift in Sources */,
+				6D94A3A622169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */,
+				6D04D86522230DB400F2D234 /* Login.swift in Sources */,
+				6D649F1E2215481B0038CF0F /* smartremitTests.swift in Sources */,
+				6D04D86D22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
+				6D93830522253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */,
+				6D04D87122230E9800F2D234 /* TransactionData.swift in Sources */,
+				6D04D86922230DE000F2D234 /* RegistrationData.swift in Sources */,
+				6D94A3A922169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
+				6D04D8752223187200F2D234 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE4D6AC22255531004F6DE2 /* Sources */ = {
+		6D649F202215481B0038CF0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE4D6B522255531004F6DE2 /* smartremitUITests.swift in Sources */,
+				6D94A3A722169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */,
+				6D04D86622230DB400F2D234 /* Login.swift in Sources */,
+				6D649F292215481B0038CF0F /* smartremitUITests.swift in Sources */,
+				6D04D86E22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
+				6D93830622253ACC00D93FB1 /* RemittanceSummaryController.swift in Sources */,
+				6D04D87222230E9800F2D234 /* TransactionData.swift in Sources */,
+				6D04D86A22230DE000F2D234 /* RegistrationData.swift in Sources */,
+				6D94A3AA22169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
+				6D04D8762223187200F2D234 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6DE4D6A722255531004F6DE2 /* PBXTargetDependency */ = {
+		6D649F1B2215481B0038CF0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6DE4D69022255531004F6DE2 /* smartremit */;
-			targetProxy = 6DE4D6A622255531004F6DE2 /* PBXContainerItemProxy */;
+			target = 6D649F04221548190038CF0F /* smartremit */;
+			targetProxy = 6D649F1A2215481B0038CF0F /* PBXContainerItemProxy */;
 		};
-		6DE4D6B222255531004F6DE2 /* PBXTargetDependency */ = {
+		6D649F262215481B0038CF0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6DE4D69022255531004F6DE2 /* smartremit */;
-			targetProxy = 6DE4D6B122255531004F6DE2 /* PBXContainerItemProxy */;
+			target = 6D649F04221548190038CF0F /* smartremit */;
+			targetProxy = 6D649F252215481B0038CF0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6DE4D69822255531004F6DE2 /* Main.storyboard */ = {
+		6D649F0C221548190038CF0F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6DE4D69922255531004F6DE2 /* Base */,
+				6D649F0D221548190038CF0F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6DE4D69D22255531004F6DE2 /* LaunchScreen.storyboard */ = {
+		6D649F112215481B0038CF0F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6DE4D69E22255531004F6DE2 /* Base */,
+				6D649F122215481B0038CF0F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +537,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6DE4D6B722255531004F6DE2 /* Debug */ = {
+		6D649F2B2215481B0038CF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +598,7 @@
 			};
 			name = Debug;
 		};
-		6DE4D6B822255531004F6DE2 /* Release */ = {
+		6D649F2C2215481B0038CF0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,53 +653,66 @@
 			};
 			name = Release;
 		};
-		6DE4D6BA22255531004F6DE2 /* Debug */ = {
+		6D649F2E2215481B0038CF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q836USZMH9;
 				INFOPLIST_FILE = smartremit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "smartremit/Supporting_files/smartremit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6DE4D6BB22255531004F6DE2 /* Release */ = {
+		6D649F2F2215481B0038CF0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q836USZMH9;
 				INFOPLIST_FILE = smartremit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "smartremit/Supporting_files/smartremit-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		6DE4D6BD22255531004F6DE2 /* Debug */ = {
+		6D649F312215481B0038CF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = smartremitTests/Info.plist;
+				INFOPLIST_FILE = "Smart RemitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,19 +720,19 @@
 			};
 			name = Debug;
 		};
-		6DE4D6BE22255531004F6DE2 /* Release */ = {
+		6D649F322215481B0038CF0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = smartremitTests/Info.plist;
+				INFOPLIST_FILE = "Smart RemitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,84 +740,84 @@
 			};
 			name = Release;
 		};
-		6DE4D6C022255531004F6DE2 /* Debug */ = {
+		6D649F342215481B0038CF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = smartremitUITests/Info.plist;
+				INFOPLIST_FILE = "Smart RemitUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = smartremit;
+				TEST_TARGET_NAME = "Smart Remit";
 			};
 			name = Debug;
 		};
-		6DE4D6C122255531004F6DE2 /* Release */ = {
+		6D649F352215481B0038CF0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = smartremitUITests/Info.plist;
+				INFOPLIST_FILE = "Smart RemitUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = smartremit;
+				TEST_TARGET_NAME = "Smart Remit";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DE4D68C22255531004F6DE2 /* Build configuration list for PBXProject "smartremit" */ = {
+		6D649F00221548190038CF0F /* Build configuration list for PBXProject "smartremit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DE4D6B722255531004F6DE2 /* Debug */,
-				6DE4D6B822255531004F6DE2 /* Release */,
+				6D649F2B2215481B0038CF0F /* Debug */,
+				6D649F2C2215481B0038CF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DE4D6B922255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremit" */ = {
+		6D649F2D2215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DE4D6BA22255531004F6DE2 /* Debug */,
-				6DE4D6BB22255531004F6DE2 /* Release */,
+				6D649F2E2215481B0038CF0F /* Debug */,
+				6D649F2F2215481B0038CF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DE4D6BC22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitTests" */ = {
+		6D649F302215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DE4D6BD22255531004F6DE2 /* Debug */,
-				6DE4D6BE22255531004F6DE2 /* Release */,
+				6D649F312215481B0038CF0F /* Debug */,
+				6D649F322215481B0038CF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DE4D6BF22255531004F6DE2 /* Build configuration list for PBXNativeTarget "smartremitUITests" */ = {
+		6D649F332215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DE4D6C022255531004F6DE2 /* Debug */,
-				6DE4D6C122255531004F6DE2 /* Release */,
+				6D649F342215481B0038CF0F /* Debug */,
+				6D649F352215481B0038CF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6DE4D68922255531004F6DE2 /* Project object */;
+	rootObject = 6D649EFD221548190038CF0F /* Project object */;
 }

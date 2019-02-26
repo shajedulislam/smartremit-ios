@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogoutController" customModule="smartremit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kn2-xo-WDN">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-Rz-KzE" customClass="GradientView" customModule="smartremit" customModuleProvider="target">
+                    <rect key="frame" x="134" y="387" width="500" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your session will be lost !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxO-dZ-tsm">
+                            <rect key="frame" x="115.5" y="75.5" width="269" height="25.5"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to log out ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEn-4l-Ifu">
+                            <rect key="frame" x="69" y="30" width="362" height="25.5"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                            </variation>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NCK-Qs-ZjU">
+                            <rect key="frame" x="112.5" y="141" width="275" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyL-Ud-rUD" customClass="CustomButtonHalfRounded" customModule="smartremit" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="130" id="XS2-mr-P5H"/>
+                                        <constraint firstAttribute="height" constant="50" id="xin-MU-DRr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                    <state key="normal" title="NO">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="LogoutCancel:" destination="-1" eventType="touchUpInside" id="AHf-DJ-N8f"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMW-dX-lH1" customClass="CustomButtonHalfRounded" customModule="smartremit" customModuleProvider="target">
+                                    <rect key="frame" x="145" y="0.0" width="130" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="f3g-4h-0al"/>
+                                        <constraint firstAttribute="width" constant="130" id="lnn-xx-VG7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                    <state key="normal" title="YES">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="YesForLogout:" destination="-1" eventType="touchUpInside" id="p03-Se-aOU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="1Os-Sn-Xdj"/>
+                        <constraint firstItem="tEn-4l-Ifu" firstAttribute="top" secondItem="ghC-Rz-KzE" secondAttribute="top" constant="30" id="OxS-gw-Fbz"/>
+                        <constraint firstItem="oxO-dZ-tsm" firstAttribute="top" secondItem="tEn-4l-Ifu" secondAttribute="bottom" constant="20" id="SPo-A6-afP"/>
+                        <constraint firstItem="NCK-Qs-ZjU" firstAttribute="top" secondItem="oxO-dZ-tsm" secondAttribute="bottom" constant="40" id="Yql-Tg-NKl"/>
+                        <constraint firstItem="NCK-Qs-ZjU" firstAttribute="centerX" secondItem="ghC-Rz-KzE" secondAttribute="centerX" id="csF-wQ-NhX"/>
+                        <constraint firstItem="tEn-4l-Ifu" firstAttribute="centerX" secondItem="ghC-Rz-KzE" secondAttribute="centerX" id="hlP-4h-kXa"/>
+                        <constraint firstItem="oxO-dZ-tsm" firstAttribute="centerX" secondItem="ghC-Rz-KzE" secondAttribute="centerX" id="hoZ-Ru-MhX"/>
+                        <constraint firstAttribute="width" constant="500" id="qm1-ij-n80"/>
+                        <constraint firstAttribute="height" constant="250" id="tc0-rt-Di0"/>
+                        <constraint firstAttribute="height" constant="200" id="zoR-xn-WG5"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="qm1-ij-n80"/>
+                            <exclude reference="tc0-rt-Di0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="1Os-Sn-Xdj"/>
+                            <include reference="qm1-ij-n80"/>
+                            <include reference="tc0-rt-Di0"/>
+                            <exclude reference="zoR-xn-WG5"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Kn2-xo-WDN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0yZ-su-ODD"/>
+                <constraint firstItem="ghC-Rz-KzE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9gA-A0-AfA"/>
+                <constraint firstItem="ghC-Rz-KzE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EuP-Lw-dei"/>
+                <constraint firstAttribute="bottom" secondItem="Kn2-xo-WDN" secondAttribute="bottom" id="cib-XW-AoN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kn2-xo-WDN" secondAttribute="trailing" id="iA0-hb-41c"/>
+                <constraint firstItem="Kn2-xo-WDN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tMA-2i-6Vo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.875" y="152.11267605633802"/>
+        </view>
+    </objects>
+</document>

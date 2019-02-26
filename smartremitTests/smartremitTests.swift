@@ -1,8 +1,8 @@
 //
-//  smartremitTests.swift
-//  smartremitTests
+//  Smart_RemitTests.swift
+//  Smart RemitTests
 //
-//  Created by Shajedul Islam on 26/2/19.
+//  Created by Shajedul Islam on 14/2/19.
 //  Copyright © 2019 NazTech. All rights reserved.
 //
 
