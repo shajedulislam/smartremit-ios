@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BankDetailsController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate{
+class BankDetailsController: UIViewController{
     @IBOutlet weak var choosePurposeLabel: UILabel!
     @IBOutlet weak var choosePurposeBtn: UIButton!
     
@@ -31,27 +31,7 @@ class BankDetailsController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         // Do any additional setup after loading the view.
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return choosePurpose.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return choosePurpose[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        optionStore = choosePurpose[row]
-        
-       
-        
-        choosePurposeLabel.text = optionStore
-        
-        
-    }
     
     /*func createPickerView()
     {
@@ -77,6 +57,9 @@ class BankDetailsController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         view.endEditing(true)
     }*/
     
+    @IBAction func continueBtnPressed(_ sender: Any) {
+        self.revealViewController().rightViewController.performSegue(withIdentifier: "RemittanceSum", sender: self.revealViewController().rightViewController)
+    }
     
     
     @IBAction func BackBtnToBenList(_ sender: Any) {

@@ -68,7 +68,4 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     }
     
 
-    @IBAction func back_button(_ sender: Any) {
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "Verification", sender: self.revealViewController().rightViewController)
-    } 
 }

@@ -1,14 +1,14 @@
 //
-//  PaymentConfirmationController.swift
+//  PaymentErrorController.swift
 //  smartremit
 //
-//  Created by Demo User on 26/2/19.
+//  Created by Shajedul Islam on 27/2/19.
 //  Copyright © 2019 NazTech. All rights reserved.
 //
 
 import UIKit
 
-class PaymentConfirmationController: UIViewController {
+class PaymentErrorController: UIViewController {
 
     @IBOutlet weak var menuBtn: UIButton!
     override func viewDidLoad() {
@@ -30,10 +30,7 @@ class PaymentConfirmationController: UIViewController {
     }
     */
     @IBAction func backBtnTapped(_ sender: Any) {
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "RemittanceSum", sender: self.revealViewController().rightViewController)
-    }
-    @IBAction func submitBtnTapped(_ sender: Any) {
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "PaymentError", sender: self.revealViewController().rightViewController)
+        self.revealViewController().rightViewController.performSegue(withIdentifier: "PaymentConfirmation", sender: self.revealViewController().rightViewController)
     }
     
 }

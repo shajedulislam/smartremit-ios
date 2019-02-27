@@ -1,16 +1,16 @@
 //
-//  PaymentConfirmationController.swift
+//  RemittanceSummaryController.swift
 //  smartremit
 //
-//  Created by Demo User on 26/2/19.
+//  Created by Shajedul Islam on 27/2/19.
 //  Copyright © 2019 NazTech. All rights reserved.
 //
 
 import UIKit
 
-class PaymentConfirmationController: UIViewController {
-
+class RemittanceSummaryController: UIViewController {
     @IBOutlet weak var menuBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,10 +30,10 @@ class PaymentConfirmationController: UIViewController {
     }
     */
     @IBAction func backBtnTapped(_ sender: Any) {
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "RemittanceSum", sender: self.revealViewController().rightViewController)
-    }
-    @IBAction func submitBtnTapped(_ sender: Any) {
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "PaymentError", sender: self.revealViewController().rightViewController)
+        self.revealViewController().rightViewController.performSegue(withIdentifier: "BankDetails", sender: self.revealViewController().rightViewController)
     }
     
+    @IBAction func preccedBtnTapped(_ sender: Any) {
+        self.revealViewController().rightViewController.performSegue(withIdentifier: "PaymentConfirmation", sender: self.revealViewController().rightViewController)
+    }
 }
