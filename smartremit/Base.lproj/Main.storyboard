@@ -345,7 +345,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwb-PF-0FI">
-                                                            <rect key="frame" x="0.0" y="11.5" width="1024" height="32"/>
+                                                            <rect key="frame" x="0.0" y="11.5" width="320" height="32"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-hd-bOm">
                                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="32"/>
@@ -355,7 +355,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3lK-JH-e1j">
-                                                                    <rect key="frame" x="15" y="0.0" width="1009" height="32"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="305" height="32"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-JV-b5m">
                                                                             <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -365,7 +365,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-NV-GFQ">
-                                                                            <rect key="frame" x="40" y="0.0" width="969" height="32"/>
+                                                                            <rect key="frame" x="40" y="0.0" width="265" height="32"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="32" id="8I7-OT-eA9"/>
                                                                             </constraints>
@@ -1857,7 +1857,7 @@
                                                     <rect key="frame" x="0.0" y="13.5" width="50" height="50"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_pencil-512" translatesAutoresizingMaskIntoConstraints="NO" id="0qX-fY-DIC">
-                                                    <rect key="frame" x="976" y="13.5" width="48" height="48"/>
+                                                    <rect key="frame" x="272" y="13.5" width="48" height="48"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f44-Mf-Awh">
                                                     <rect key="frame" x="56" y="11" width="197" height="33"/>
@@ -2333,9 +2333,9 @@
                                                                             <constraint firstAttribute="height" constant="80" id="u2U-u3-8xF"/>
                                                                             <constraint firstAttribute="width" constant="80" id="vuJ-eY-6kJ"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button" image="logo new color"/>
+                                                                        <state key="normal" title="purpose" image="logo new color"/>
                                                                         <connections>
-                                                                            <action selector="choosePurposeTapped:" destination="aoB-jJ-Kud" eventType="touchUpInside" id="1ED-Q3-nYf"/>
+                                                                            <action selector="chooseForAllBtnTapped:" destination="aoB-jJ-Kud" eventType="touchUpInside" id="e2N-US-wJu"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -2388,7 +2388,10 @@
                                                                             <constraint firstAttribute="width" constant="80" id="1h3-0g-0Kn"/>
                                                                             <constraint firstAttribute="height" constant="80" id="7nk-UN-Usl"/>
                                                                         </constraints>
-                                                                        <state key="normal" image="logo new color"/>
+                                                                        <state key="normal" title="method" image="logo new color"/>
+                                                                        <connections>
+                                                                            <action selector="chooseForAllBtnTapped:" destination="aoB-jJ-Kud" eventType="touchUpInside" id="y8h-Ry-pqx"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -2414,7 +2417,7 @@
                                                                     </mask>
                                                                 </variation>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash Pick-up (PIN)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-DX-5ZV">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-DX-5ZV">
                                                                 <rect key="frame" x="0.0" y="85" width="155" height="18.5"/>
                                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2446,7 +2449,10 @@
                                                                             <constraint firstAttribute="height" constant="80" id="Mrc-FL-zf6"/>
                                                                             <constraint firstAttribute="width" constant="80" id="dQN-t3-TbO"/>
                                                                         </constraints>
-                                                                        <state key="normal" image="logo new color"/>
+                                                                        <state key="normal" title="bank" image="logo new color"/>
+                                                                        <connections>
+                                                                            <action selector="chooseForAllBtnTapped:" destination="aoB-jJ-Kud" eventType="touchUpInside" id="zUe-5H-XKf"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -2498,7 +2504,10 @@
                                                                             <constraint firstAttribute="width" constant="80" id="Md3-Hf-cUi"/>
                                                                             <constraint firstAttribute="height" constant="80" id="oZ2-Ou-zdp"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button" image="logo new color"/>
+                                                                        <state key="normal" title="district" image="logo new color"/>
+                                                                        <connections>
+                                                                            <action selector="chooseForAllBtnTapped:" destination="aoB-jJ-Kud" eventType="touchUpInside" id="mgZ-3g-aKo"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -2556,7 +2565,10 @@
                                                                             <constraint firstAttribute="width" constant="80" id="eP7-I3-dhJ"/>
                                                                             <constraint firstAttribute="height" constant="80" id="v0G-sa-YuP"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button" image="logo new color"/>
+                                                                        <state key="normal" title="branch" image="logo new color"/>
+                                                                        <connections>
+                                                                            <action selector="chooseForAllBtnTapped:" destination="aoB-jJ-Kud" eventType="touchUpInside" id="umS-jZ-Zha"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -2608,7 +2620,10 @@
                                                                             <constraint firstAttribute="height" constant="80" id="Gb0-LT-alo"/>
                                                                             <constraint firstAttribute="width" constant="80" id="YLe-7f-ez1"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button" image="logo new color"/>
+                                                                        <state key="normal" title="account" image="logo new color"/>
+                                                                        <connections>
+                                                                            <action selector="chooseForAllBtnTapped:" destination="aoB-jJ-Kud" eventType="touchUpInside" id="LAa-Va-cIU"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -2725,7 +2740,11 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="choosePurposeBtn" destination="ps9-3y-FfU" id="Big-nr-IJB"/>
+                        <outlet property="chooseAccountLabel" destination="qtd-Zq-rEP" id="N79-El-yCc"/>
+                        <outlet property="chooseBankLabel" destination="LZu-pg-X8g" id="gt0-8c-nSd"/>
+                        <outlet property="chooseBranchLabel" destination="fhb-Gv-LAK" id="Kih-Kj-533"/>
+                        <outlet property="chooseDistrictLabel" destination="sA7-cP-adT" id="HwI-5R-cd3"/>
+                        <outlet property="chooseMethodLabel" destination="ocJ-DX-5ZV" id="Hje-J6-vgD"/>
                         <outlet property="choosePurposeLabel" destination="oC4-ap-DQF" id="ycu-AS-75L"/>
                         <outlet property="menuBtn" destination="e4H-Fb-Tta" id="vGE-62-UAS"/>
                     </connections>
