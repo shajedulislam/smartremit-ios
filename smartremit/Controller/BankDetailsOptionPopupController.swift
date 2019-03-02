@@ -84,12 +84,18 @@ class BankDetailsOptionPopupController: UIViewController, UIPickerViewDelegate, 
         
     }
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        
         let myTitle = NSAttributedString(string: optionList[row], attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         
         return myTitle
     }
     
     
+    @IBAction func closeOptionMenu(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
     
 
   

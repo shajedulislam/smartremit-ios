@@ -19,8 +19,53 @@ class BankDetailsController: UIViewController{
     @IBOutlet weak var chooseBranchLabel: UILabel!
     @IBOutlet weak var chooseAccountLabel: UILabel!
     
+    //The main stack for all
+    
+    @IBOutlet weak var the_main_stack: UIStackView!
+    
+    //row stacks of options
+    
+    
+    @IBOutlet weak var purpose_method_stack: UIStackView!
+    @IBOutlet weak var bank_district_stack: UIStackView!
+    @IBOutlet weak var branch_account_stack: UIStackView!
+    
+    
+    //stacks of options
+    
+    @IBOutlet weak var purposeStack: UIStackView!
+    @IBOutlet weak var methodStack: UIStackView!
+    @IBOutlet weak var bankStack: UIStackView!
+    @IBOutlet weak var districtStack: UIStackView!
+    @IBOutlet weak var branchStack: UIStackView!
+    @IBOutlet weak var accountStack: UIStackView!
+    
+    @IBOutlet weak var continiueBtn: CustomButtonRounded!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //hiding every option stacks individually
+        //purposeStack.isHidden = true
+        methodStack.isHidden = true
+        bankStack.isHidden = true
+        districtStack.isHidden = true
+        branchStack.isHidden = true
+        accountStack.isHidden = true
+        
+        //hiding continue button
+        continiueBtn.isHidden = true
+        
+        //hiding row wise stacks which contains option stacks
+        //purpose_method_stack.isHidden = true
+        bank_district_stack.isHidden = true
+        branch_account_stack.isHidden = true
+        
+        //hiding the main stack that contains everything
+        //the_main_stack.isHidden = true
+        
         
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
 
@@ -69,7 +114,8 @@ class BankDetailsController: UIViewController{
     
     //----------------Custom Functiins
     
-    func optionReceiver(optionName : String) {
+    func optionReceiver(optionName : String)
+    {
 
         let sb = UIStoryboard(name: "BankDetailsOptionPopup", bundle: nil)
         
@@ -84,26 +130,34 @@ class BankDetailsController: UIViewController{
         if(optionName == "purpose")
         {
             self.choosePurposeLabel.text = data
+            self.methodStack.isHidden = false
         }
         else if(optionName == "method")
         {
             self.chooseMethodLabel.text = data
+            self.bank_district_stack.isHidden = false
+            self.bankStack.isHidden = false
         }
         else if(optionName == "bank")
         {
             self.chooseBankLabel.text = data
+            self.districtStack.isHidden = false
         }
         else if(optionName == "district")
         {
             self.chooseDistrictLabel.text = data
+            self.branch_account_stack.isHidden = false
+            self.branchStack.isHidden = false
         }
         else if(optionName == "branch")
         {
             self.chooseBranchLabel.text = data
+            self.accountStack.isHidden = false
         }
         else if(optionName == "account")
         {
             self.chooseAccountLabel.text = data
+            self.continiueBtn.isHidden = false
         }
             
 
