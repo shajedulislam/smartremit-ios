@@ -8,20 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6D04D86422230DB400F2D234 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86322230DB400F2D234 /* Login.swift */; };
-		6D04D86522230DB400F2D234 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86322230DB400F2D234 /* Login.swift */; };
-		6D04D86622230DB400F2D234 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86322230DB400F2D234 /* Login.swift */; };
 		6D04D86822230DE000F2D234 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86722230DE000F2D234 /* RegistrationData.swift */; };
-		6D04D86922230DE000F2D234 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86722230DE000F2D234 /* RegistrationData.swift */; };
-		6D04D86A22230DE000F2D234 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86722230DE000F2D234 /* RegistrationData.swift */; };
 		6D04D86C22230E1000F2D234 /* BeneficiaryListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */; };
-		6D04D86D22230E1000F2D234 /* BeneficiaryListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */; };
-		6D04D86E22230E1000F2D234 /* BeneficiaryListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */; };
 		6D04D87022230E9800F2D234 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* TransactionData.swift */; };
-		6D04D87122230E9800F2D234 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* TransactionData.swift */; };
-		6D04D87222230E9800F2D234 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* TransactionData.swift */; };
 		6D04D8742223187200F2D234 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D8732223187200F2D234 /* LoginService.swift */; };
-		6D04D8752223187200F2D234 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D8732223187200F2D234 /* LoginService.swift */; };
-		6D04D8762223187200F2D234 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D8732223187200F2D234 /* LoginService.swift */; };
 		6D2494982217D39700F600C8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494962217D39700F600C8 /* SWRevealViewController.m */; };
 		6D24949C2217E0FC00F600C8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24949B2217E0FC00F600C8 /* LoginController.swift */; };
 		6D2494A22218166400F600C8 /* Login_verificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494A12218166400F600C8 /* Login_verificationController.swift */; };
@@ -34,14 +24,9 @@
 		6D649F0E221548190038CF0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D649F0C221548190038CF0F /* Main.storyboard */; };
 		6D649F102215481B0038CF0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D649F0F2215481B0038CF0F /* Assets.xcassets */; };
 		6D649F132215481B0038CF0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D649F112215481B0038CF0F /* LaunchScreen.storyboard */; };
-		6D649F1E2215481B0038CF0F /* smartremitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F1D2215481B0038CF0F /* smartremitTests.swift */; };
-		6D649F292215481B0038CF0F /* smartremitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D649F282215481B0038CF0F /* smartremitUITests.swift */; };
+		6D6F9DE9222BA7000093560F /* smartremitUITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6F9DE8222BA7000093560F /* smartremitUITesting.swift */; };
 		6D94A3A522169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
-		6D94A3A622169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
-		6D94A3A722169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */; };
 		6D94A3A822169A6B00D34EFE /* CustomButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */; };
-		6D94A3A922169A6B00D34EFE /* CustomButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */; };
-		6D94A3AA22169A6B00D34EFE /* CustomButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */; };
 		6D992261221ABADB007BE8D3 /* UploadFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D992260221ABADB007BE8D3 /* UploadFileController.swift */; };
 		6D992263221ACF28007BE8D3 /* BankDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D992262221ACF28007BE8D3 /* BankDetailsController.swift */; };
 		6DA744F0221C54BF0001AD72 /* LogoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA744EE221C54BF0001AD72 /* LogoutController.swift */; };
@@ -66,19 +51,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6D649F1A2215481B0038CF0F /* PBXContainerItemProxy */ = {
+		6D6F9DEB222BA7000093560F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6D649EFD221548190038CF0F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6D649F04221548190038CF0F;
-			remoteInfo = "Smart Remit";
-		};
-		6D649F252215481B0038CF0F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6D649EFD221548190038CF0F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D649F04221548190038CF0F;
-			remoteInfo = "Smart Remit";
+			remoteInfo = smartremit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -104,12 +82,9 @@
 		6D649F0F2215481B0038CF0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D649F122215481B0038CF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D649F142215481B0038CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D649F192215481B0038CF0F /* smartremitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D649F1D2215481B0038CF0F /* smartremitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitTests.swift; sourceTree = "<group>"; };
-		6D649F1F2215481B0038CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D649F242215481B0038CF0F /* smartremitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D649F282215481B0038CF0F /* smartremitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitUITests.swift; sourceTree = "<group>"; };
-		6D649F2A2215481B0038CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D6F9DE6222BA6FF0093560F /* smartremitUITesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartremitUITesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6F9DE8222BA7000093560F /* smartremitUITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartremitUITesting.swift; sourceTree = "<group>"; };
+		6D6F9DEA222BA7000093560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D94A3A322169A6B00D34EFE /* CustomTextFieldHalfRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldHalfRound.swift; sourceTree = "<group>"; };
 		6D94A3A422169A6B00D34EFE /* CustomButtonRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonRounded.swift; sourceTree = "<group>"; };
 		6D992260221ABADB007BE8D3 /* UploadFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileController.swift; sourceTree = "<group>"; };
@@ -143,14 +118,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D649F162215481B0038CF0F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D649F212215481B0038CF0F /* Frameworks */ = {
+		6D6F9DE3222BA6FF0093560F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,8 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				6D649F07221548190038CF0F /* smartremit */,
-				6D649F1C2215481B0038CF0F /* smartremitTests */,
-				6D649F272215481B0038CF0F /* smartremitUITests */,
+				6D6F9DE7222BA7000093560F /* smartremitUITesting */,
 				6D649F06221548190038CF0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -200,8 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				6D649F05221548190038CF0F /* smartremit.app */,
-				6D649F192215481B0038CF0F /* smartremitTests.xctest */,
-				6D649F242215481B0038CF0F /* smartremitUITests.xctest */,
+				6D6F9DE6222BA6FF0093560F /* smartremitUITesting.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,24 +191,6 @@
 				6DDA27802227D19E008E07E1 /* BankDetailsOptionPopup.storyboard */,
 			);
 			path = smartremit;
-			sourceTree = "<group>";
-		};
-		6D649F1C2215481B0038CF0F /* smartremitTests */ = {
-			isa = PBXGroup;
-			children = (
-				6D649F1D2215481B0038CF0F /* smartremitTests.swift */,
-				6D649F1F2215481B0038CF0F /* Info.plist */,
-			);
-			path = smartremitTests;
-			sourceTree = "<group>";
-		};
-		6D649F272215481B0038CF0F /* smartremitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6D649F282215481B0038CF0F /* smartremitUITests.swift */,
-				6D649F2A2215481B0038CF0F /* Info.plist */,
-			);
-			path = smartremitUITests;
 			sourceTree = "<group>";
 		};
 		6D649F362215485D0038CF0F /* Controller */ = {
@@ -282,6 +230,15 @@
 				6DA74530221C68850001AD72 /* CustomLineByView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6D6F9DE7222BA7000093560F /* smartremitUITesting */ = {
+			isa = PBXGroup;
+			children = (
+				6D6F9DE8222BA7000093560F /* smartremitUITesting.swift */,
+				6D6F9DEA222BA7000093560F /* Info.plist */,
+			);
+			path = smartremitUITesting;
 			sourceTree = "<group>";
 		};
 		6DA744ED221C54A20001AD72 /* Xib */ = {
@@ -332,40 +289,22 @@
 			productReference = 6D649F05221548190038CF0F /* smartremit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6D649F182215481B0038CF0F /* smartremitTests */ = {
+		6D6F9DE5222BA6FF0093560F /* smartremitUITesting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D649F302215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitTests" */;
+			buildConfigurationList = 6D6F9DED222BA7000093560F /* Build configuration list for PBXNativeTarget "smartremitUITesting" */;
 			buildPhases = (
-				6D649F152215481B0038CF0F /* Sources */,
-				6D649F162215481B0038CF0F /* Frameworks */,
-				6D649F172215481B0038CF0F /* Resources */,
+				6D6F9DE2222BA6FF0093560F /* Sources */,
+				6D6F9DE3222BA6FF0093560F /* Frameworks */,
+				6D6F9DE4222BA6FF0093560F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6D649F1B2215481B0038CF0F /* PBXTargetDependency */,
+				6D6F9DEC222BA7000093560F /* PBXTargetDependency */,
 			);
-			name = smartremitTests;
-			productName = "Smart RemitTests";
-			productReference = 6D649F192215481B0038CF0F /* smartremitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6D649F232215481B0038CF0F /* smartremitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6D649F332215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitUITests" */;
-			buildPhases = (
-				6D649F202215481B0038CF0F /* Sources */,
-				6D649F212215481B0038CF0F /* Frameworks */,
-				6D649F222215481B0038CF0F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6D649F262215481B0038CF0F /* PBXTargetDependency */,
-			);
-			name = smartremitUITests;
-			productName = "Smart RemitUITests";
-			productReference = 6D649F242215481B0038CF0F /* smartremitUITests.xctest */;
+			name = smartremitUITesting;
+			productName = smartremitUITesting;
+			productReference = 6D6F9DE6222BA6FF0093560F /* smartremitUITesting.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -382,11 +321,7 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
-					6D649F182215481B0038CF0F = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 6D649F04221548190038CF0F;
-					};
-					6D649F232215481B0038CF0F = {
+					6D6F9DE5222BA6FF0093560F = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 6D649F04221548190038CF0F;
 					};
@@ -406,8 +341,7 @@
 			projectRoot = "";
 			targets = (
 				6D649F04221548190038CF0F /* smartremit */,
-				6D649F182215481B0038CF0F /* smartremitTests */,
-				6D649F232215481B0038CF0F /* smartremitUITests */,
+				6D6F9DE5222BA6FF0093560F /* smartremitUITesting */,
 			);
 		};
 /* End PBXProject section */
@@ -427,14 +361,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D649F172215481B0038CF0F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D649F222215481B0038CF0F /* Resources */ = {
+		6D6F9DE4222BA6FF0093560F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -484,48 +411,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D649F152215481B0038CF0F /* Sources */ = {
+		6D6F9DE2222BA6FF0093560F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D94A3A622169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */,
-				6D04D86522230DB400F2D234 /* Login.swift in Sources */,
-				6D649F1E2215481B0038CF0F /* smartremitTests.swift in Sources */,
-				6D04D86D22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
-				6D04D87122230E9800F2D234 /* TransactionData.swift in Sources */,
-				6D04D86922230DE000F2D234 /* RegistrationData.swift in Sources */,
-				6D94A3A922169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
-				6D04D8752223187200F2D234 /* LoginService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D649F202215481B0038CF0F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D94A3A722169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */,
-				6D04D86622230DB400F2D234 /* Login.swift in Sources */,
-				6D649F292215481B0038CF0F /* smartremitUITests.swift in Sources */,
-				6D04D86E22230E1000F2D234 /* BeneficiaryListData.swift in Sources */,
-				6D04D87222230E9800F2D234 /* TransactionData.swift in Sources */,
-				6D04D86A22230DE000F2D234 /* RegistrationData.swift in Sources */,
-				6D94A3AA22169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
-				6D04D8762223187200F2D234 /* LoginService.swift in Sources */,
+				6D6F9DE9222BA7000093560F /* smartremitUITesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6D649F1B2215481B0038CF0F /* PBXTargetDependency */ = {
+		6D6F9DEC222BA7000093560F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6D649F04221548190038CF0F /* smartremit */;
-			targetProxy = 6D649F1A2215481B0038CF0F /* PBXContainerItemProxy */;
-		};
-		6D649F262215481B0038CF0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6D649F04221548190038CF0F /* smartremit */;
-			targetProxy = 6D649F252215481B0038CF0F /* PBXContainerItemProxy */;
+			targetProxy = 6D6F9DEB222BA7000093560F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -712,81 +612,39 @@
 			};
 			name = Release;
 		};
-		6D649F312215481B0038CF0F /* Debug */ = {
+		6D6F9DEE222BA7000093560F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smart RemitTests/Info.plist";
+				INFOPLIST_FILE = smartremitUITesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitUITesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartremit.app/smartremit";
+				TEST_TARGET_NAME = smartremit;
 			};
 			name = Debug;
 		};
-		6D649F322215481B0038CF0F /* Release */ = {
+		6D6F9DEF222BA7000093560F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smart RemitTests/Info.plist";
+				INFOPLIST_FILE = smartremitUITesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naztech.smartremitUITesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartremit.app/smartremit";
-			};
-			name = Release;
-		};
-		6D649F342215481B0038CF0F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smart RemitUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Smart Remit";
-			};
-			name = Debug;
-		};
-		6D649F352215481B0038CF0F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smart RemitUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.naztech.Smart-RemitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Smart Remit";
+				TEST_TARGET_NAME = smartremit;
 			};
 			name = Release;
 		};
@@ -811,20 +669,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D649F302215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitTests" */ = {
+		6D6F9DED222BA7000093560F /* Build configuration list for PBXNativeTarget "smartremitUITesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6D649F312215481B0038CF0F /* Debug */,
-				6D649F322215481B0038CF0F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6D649F332215481B0038CF0F /* Build configuration list for PBXNativeTarget "smartremitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6D649F342215481B0038CF0F /* Debug */,
-				6D649F352215481B0038CF0F /* Release */,
+				6D6F9DEE222BA7000093560F /* Debug */,
+				6D6F9DEF222BA7000093560F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
