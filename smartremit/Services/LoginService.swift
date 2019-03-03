@@ -37,6 +37,9 @@ class LoginServices
                     //A handler that returns from this async function
                     completion(true)
                 }
+                else{
+                    completion(false)
+                }
             } 
             catch
             {

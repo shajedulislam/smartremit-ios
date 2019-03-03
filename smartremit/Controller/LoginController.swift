@@ -43,18 +43,40 @@ class LoginController: UIViewController {
         let usernames = usernameTfield.text
         let passwords = passwordTfield.text
         
-        
-        LoginServices.instance.login(username: usernames!, password: passwords!){ (success) in
-            
-            if(success == true)
-            {
-                DispatchQueue.main.async(execute:{
-                    self.succededLogin()
-                    
-                })
-            }
-            
+        if(usernames == "" && passwords == "")
+        {
+            loginAlerts(title: "Error !", message: "Insert Username & Password")
         }
+        else if(usernames == "")
+        {
+            loginAlerts(title: "Error !", message: "Insert Username")
+        }
+        else if(passwords == "")
+        {
+            loginAlerts(title: "Error !", message: "Insert Password")
+        }
+        
+        else
+        {
+            LoginServices.instance.login(username: usernames!, password: passwords!){ (success) in
+                
+                if(success == true)
+                {
+                    DispatchQueue.main.async(execute:{ self.succededLogin() })
+                }
+                else if(success == false)
+                {
+                    //DispatchQueue.main.async(execute:{ self.loginAlerts(title: "Failed", message: "Invalid username or Password") })
+                    
+                    DispatchQueue.main.async(execute:{ self.failedLogin() })
+                    
+                }
+                
+            }
+        }
+        
+        
+        
         
     }
     
@@ -163,6 +185,24 @@ class LoginController: UIViewController {
         warningText.text = "Please insert your credentials"
         
         self.revealViewController().rightViewController.performSegue(withIdentifier: "Verification", sender: self.revealViewController().rightViewController)
+    }
+    
+    func loginAlerts(title: String, message: String)
+    {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { (ACTION) in alert.dismiss(animated: true, completion: nil)}))
+        
+        self.present(alert, animated: true, completion: nil)
+     
+    }
+    
+    func failedLogin()
+    {
+        self.warningStack.isHidden = true
+        let wrongCred = WrongCredentialsXib()
+        wrongCred.modalPresentationStyle = .custom
+        
+        present(wrongCred, animated: true, completion: nil)
     }
     
 }
