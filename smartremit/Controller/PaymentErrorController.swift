@@ -14,7 +14,7 @@ class PaymentErrorController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
+        //menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
 
         // Do any additional setup after loading the view.
     }

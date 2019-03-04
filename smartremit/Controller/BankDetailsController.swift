@@ -67,7 +67,7 @@ class BankDetailsController: UIViewController{
         //the_main_stack.isHidden = true
         
         
-        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
+        //menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
 
     }
   
@@ -109,7 +109,7 @@ class BankDetailsController: UIViewController{
     }
     
     @IBAction func continueBtnPressed(_ sender: Any) {
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "RemittanceSum", sender: self.revealViewController().rightViewController)
+       performSegue(withIdentifier: "RemittanceSum", sender: nil)
     }
     
     //----------------Custom Functiins

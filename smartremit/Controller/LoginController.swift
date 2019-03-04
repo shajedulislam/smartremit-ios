@@ -23,6 +23,7 @@ class LoginController: UIViewController {
     @IBOutlet weak var warningStack: UIStackView!
     @IBOutlet weak var warningText: UILabel!
     
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
     
     override func viewDidLoad()
     {
@@ -30,7 +31,10 @@ class LoginController: UIViewController {
         
         warningText.text = "Please insert your credentials"
         warningStack.isHidden = true
-        menubtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
+        //menubtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
+        
+        menuBtn.target = revealViewController()
+        menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())

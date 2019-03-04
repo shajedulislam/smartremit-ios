@@ -10,7 +10,8 @@ import UIKit
 
 class BeneficiraryListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
+    
     let benList = getBenList()
    
     @IBOutlet var label_total_ben: UILabel!
@@ -20,7 +21,9 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         showBenLabel()
         
-        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
+        menuBtn.target = revealViewController()
+        menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
+        
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -64,7 +67,7 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         
        
         
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "BankDetails", sender: self.revealViewController().rightViewController)
+       performSegue(withIdentifier: "BankDetails", sender: nil)
     }
     
 

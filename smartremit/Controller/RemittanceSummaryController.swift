@@ -14,7 +14,7 @@ class RemittanceSummaryController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
+        //menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
 
         // Do any additional setup after loading the view.
     }
@@ -34,6 +34,7 @@ class RemittanceSummaryController: UIViewController {
     }
     
     @IBAction func preccedBtnTapped(_ sender: Any) {
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "PaymentConfirmation", sender: self.revealViewController().rightViewController)
+        //self.revealViewController().rightViewController.performSegue(withIdentifier: "PaymentConfirmation", sender: self.revealViewController().rightViewController)
+        performSegue(withIdentifier: "PaymentConfirmation", sender: nil)
     }
 }
