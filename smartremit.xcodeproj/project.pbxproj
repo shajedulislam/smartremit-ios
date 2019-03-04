@@ -10,7 +10,7 @@
 		6D04D86422230DB400F2D234 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86322230DB400F2D234 /* Login.swift */; };
 		6D04D86822230DE000F2D234 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86722230DE000F2D234 /* RegistrationData.swift */; };
 		6D04D86C22230E1000F2D234 /* BeneficiaryListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */; };
-		6D04D87022230E9800F2D234 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* TransactionData.swift */; };
+		6D04D87022230E9800F2D234 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D86F22230E9800F2D234 /* Transaction.swift */; };
 		6D04D8742223187200F2D234 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04D8732223187200F2D234 /* LoginService.swift */; };
 		6D2494982217D39700F600C8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2494962217D39700F600C8 /* SWRevealViewController.m */; };
 		6D24949C2217E0FC00F600C8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24949B2217E0FC00F600C8 /* LoginController.swift */; };
@@ -64,7 +64,7 @@
 		6D04D86322230DB400F2D234 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6D04D86722230DE000F2D234 /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
 		6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiaryListData.swift; sourceTree = "<group>"; };
-		6D04D86F22230E9800F2D234 /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
+		6D04D86F22230E9800F2D234 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		6D04D8732223187200F2D234 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		6D2494952217D39600F600C8 /* smartremit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smartremit-Bridging-Header.h"; sourceTree = "<group>"; };
 		6D2494962217D39700F600C8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -264,7 +264,7 @@
 				6D04D86322230DB400F2D234 /* Login.swift */,
 				6D04D86722230DE000F2D234 /* RegistrationData.swift */,
 				6D04D86B22230E1000F2D234 /* BeneficiaryListData.swift */,
-				6D04D86F22230E9800F2D234 /* TransactionData.swift */,
+				6D04D86F22230E9800F2D234 /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,7 +384,7 @@
 				6D94A3A822169A6B00D34EFE /* CustomButtonRounded.swift in Sources */,
 				6DFAE8932223D5DF00E4D813 /* Constants.swift in Sources */,
 				6D94A3A522169A6B00D34EFE /* CustomTextFieldHalfRound.swift in Sources */,
-				6D04D87022230E9800F2D234 /* TransactionData.swift in Sources */,
+				6D04D87022230E9800F2D234 /* Transaction.swift in Sources */,
 				6D2494A62218527E00F600C8 /* GradientView.swift in Sources */,
 				6DB12DB12219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift in Sources */,
 				6D649F0B221548190038CF0F /* GetstartedController.swift in Sources */,
