@@ -14,6 +14,8 @@ class RemittanceSummaryController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        BeneficiraryListController.instance.navbarimg()
+        
         //menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
 
         // Do any additional setup after loading the view.
