@@ -10,7 +10,7 @@ import UIKit
 
 class BeneficiraryListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    static var instance = BeneficiraryListController()
+    //static var instance = BeneficiraryListController()
     
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     
@@ -22,11 +22,12 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         
         super.viewDidLoad()
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
        
         showBenLabel()
-        
-        navbarimg()
-        
+       
         menuBtn.target = revealViewController()
         menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
         
@@ -76,12 +77,12 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
        performSegue(withIdentifier: "BankDetails", sender: nil)
     }
     
-    func navbarimg(){
-        
-         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "banner")?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode : .stretch ), for: .default)
-        
-        
-    }
+//    func navbarimg(){
+//        
+//         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "banner")?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode : .stretch ), for: .default)
+//        
+//        
+//    }
     
 
 }

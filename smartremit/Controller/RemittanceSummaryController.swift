@@ -15,7 +15,9 @@ class RemittanceSummaryController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        BeneficiraryListController.instance.navbarimg()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         menuBtn.target = revealViewController()
         menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))

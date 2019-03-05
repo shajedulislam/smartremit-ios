@@ -47,7 +47,7 @@ class BankDetailsController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        BeneficiraryListController.instance.navbarimg()
+        //BeneficiraryListController.instance.navbarimg()
         //hiding every option stacks individually
         //purposeStack.isHidden = true
         methodStack.isHidden = true

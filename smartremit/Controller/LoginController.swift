@@ -16,6 +16,7 @@ import UIKit
 //typealias CompletionHandler = (_ success : Bool) -> ()
 
 class LoginController: UIViewController {
+    
 
     @IBOutlet weak var usernameTfield: CustomTextFieldHalfRound!
     @IBOutlet weak var passwordTfield: CustomTextFieldHalfRound!
@@ -29,6 +30,10 @@ class LoginController: UIViewController {
     {
         super.viewDidLoad()
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
         warningText.text = "Please insert your credentials"
         warningStack.isHidden = true
         //menubtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
@@ -40,6 +45,7 @@ class LoginController: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
       
     }
+    
     
     @IBAction func LoginBtnAction(_ sender: UIButton)
     {

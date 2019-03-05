@@ -484,7 +484,7 @@
             </objects>
             <point key="canvasLocation" x="1837.5" y="-462.67605633802816"/>
         </scene>
-        <!--Login Controller-->
+        <!--Log in-->
         <scene sceneID="kTJ-pD-7sP">
             <objects>
                 <viewController id="JVm-Ko-aIu" customClass="LoginController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
@@ -493,7 +493,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gCw-X8-vNa">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-wE-bt3">
                                 <rect key="frame" x="93" y="361" width="189.5" height="31"/>
@@ -600,7 +600,7 @@
                             <constraint firstItem="Z0p-wE-bt3" firstAttribute="top" secondItem="ky0-Xn-xLr" secondAttribute="bottom" constant="15" id="oXr-nf-RIZ"/>
                             <constraint firstItem="jUJ-xR-qK3" firstAttribute="trailing" secondItem="gCw-X8-vNa" secondAttribute="trailing" id="qAt-Xq-UBS"/>
                             <constraint firstItem="Z0p-wE-bt3" firstAttribute="centerX" secondItem="OZ1-RF-Xxz" secondAttribute="centerX" id="saA-3U-9pv"/>
-                            <constraint firstItem="gCw-X8-vNa" firstAttribute="top" secondItem="jUJ-xR-qK3" secondAttribute="top" id="vFY-pW-g55"/>
+                            <constraint firstItem="gCw-X8-vNa" firstAttribute="top" secondItem="OZ1-RF-Xxz" secondAttribute="top" id="vFY-pW-g55"/>
                             <constraint firstItem="WMo-Iy-EUy" firstAttribute="top" secondItem="Z0p-wE-bt3" secondAttribute="bottom" constant="50" id="wvR-DX-0Ji"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jUJ-xR-qK3"/>
@@ -625,8 +625,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="YWa-fg-LiP">
-                        <barButtonItem key="rightBarButtonItem" image="smackBurger" id="Nrc-ZU-VuR"/>
+                    <navigationItem key="navigationItem" title="Log in" id="YWa-fg-LiP">
+                        <barButtonItem key="rightBarButtonItem" image="navigation_button" id="Nrc-ZU-VuR"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBtn" destination="Nrc-ZU-VuR" id="ECG-Ur-9Ga"/>
@@ -827,7 +827,7 @@
             </objects>
             <point key="canvasLocation" x="3859" y="618"/>
         </scene>
-        <!--Remittance Summary Controller-->
+        <!--Remittance Summary-->
         <scene sceneID="Q8L-6N-VUJ">
             <objects>
                 <viewController id="fE9-Xv-3w4" customClass="RemittanceSummaryController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
@@ -836,7 +836,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Cb0-eY-244">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kos-tT-iBK">
                                 <rect key="frame" x="19" y="230" width="337.5" height="167"/>
@@ -1066,10 +1066,10 @@
                             <constraint firstItem="0w1-ad-wuP" firstAttribute="top" secondItem="CN2-3Q-fhr" secondAttribute="bottom" constant="35" id="Bay-me-tNR">
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
-                            <constraint firstItem="Cb0-eY-244" firstAttribute="top" secondItem="pCK-sY-kf4" secondAttribute="top" id="BxN-gr-csU"/>
                             <constraint firstItem="Kos-tT-iBK" firstAttribute="width" secondItem="f4u-KF-bfZ" secondAttribute="width" multiplier="0.9" id="IEH-gv-cIv"/>
                             <constraint firstItem="Kos-tT-iBK" firstAttribute="width" secondItem="f4u-KF-bfZ" secondAttribute="width" multiplier="0.6" id="OC7-72-9z8"/>
                             <constraint firstItem="Naz-Ea-hah" firstAttribute="width" secondItem="f4u-KF-bfZ" secondAttribute="width" multiplier="0.6" id="Rul-3Y-8uN"/>
+                            <constraint firstItem="Cb0-eY-244" firstAttribute="top" secondItem="f4u-KF-bfZ" secondAttribute="top" id="Tt2-oa-3i7"/>
                             <constraint firstItem="0w1-ad-wuP" firstAttribute="centerX" secondItem="f4u-KF-bfZ" secondAttribute="centerX" id="TtD-fz-Dpe"/>
                             <constraint firstItem="Naz-Ea-hah" firstAttribute="centerX" secondItem="f4u-KF-bfZ" secondAttribute="centerX" id="b9O-13-c75"/>
                             <constraint firstItem="pCK-sY-kf4" firstAttribute="trailing" secondItem="Cb0-eY-244" secondAttribute="trailing" id="bJS-aY-nIT"/>
@@ -1098,8 +1098,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="V2V-vj-UnL">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="smackBurger" id="7i5-Yg-89u"/>
+                    <navigationItem key="navigationItem" title="Remittance Summary" id="V2V-vj-UnL">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="navigation_button" id="7i5-Yg-89u"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBtn" destination="7i5-Yg-89u" id="8KD-Or-2XM"/>
@@ -1108,9 +1108,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPc-sf-a1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5753" y="-1945"/>
+            <point key="canvasLocation" x="5752.8000000000002" y="-1945.2773613193406"/>
         </scene>
-        <!--Payment Confirmation Controller-->
+        <!--Payment Confirmation-->
         <scene sceneID="3zv-4t-et3">
             <objects>
                 <viewController id="NHK-Iw-nHM" customClass="PaymentConfirmationController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
@@ -1119,7 +1119,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1t8-PH-17U">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKJ-7Z-bhB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="30"/>
@@ -1524,7 +1524,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1t8-PH-17U" firstAttribute="top" secondItem="2K4-a2-5ad" secondAttribute="top" id="0Mt-Yf-IHg"/>
                             <constraint firstItem="PPG-UL-S7Q" firstAttribute="width" secondItem="jPQ-9Q-4jb" secondAttribute="width" multiplier="0.6" id="0r0-O8-zRZ"/>
                             <constraint firstItem="2K4-a2-5ad" firstAttribute="trailing" secondItem="iKJ-7Z-bhB" secondAttribute="trailing" id="229-Lj-yUT"/>
                             <constraint firstItem="pum-rO-XJj" firstAttribute="width" secondItem="jPQ-9Q-4jb" secondAttribute="width" multiplier="0.6" id="6PB-0v-asV"/>
@@ -1532,6 +1531,7 @@
                             <constraint firstItem="pum-rO-XJj" firstAttribute="top" secondItem="PPG-UL-S7Q" secondAttribute="bottom" constant="50" id="9Mo-PV-srD">
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
+                            <constraint firstItem="1t8-PH-17U" firstAttribute="top" secondItem="jPQ-9Q-4jb" secondAttribute="top" id="CIW-LJ-px7"/>
                             <constraint firstItem="iKJ-7Z-bhB" firstAttribute="leading" secondItem="2K4-a2-5ad" secondAttribute="leading" id="CN1-dV-k9t"/>
                             <constraint firstItem="PPG-UL-S7Q" firstAttribute="centerY" secondItem="jPQ-9Q-4jb" secondAttribute="centerY" id="Ppw-SJ-FiA">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-50"/>
@@ -1560,8 +1560,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="hCi-U5-UHu">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="smackBurger" id="iYt-yp-jbY"/>
+                    <navigationItem key="navigationItem" title="Payment Confirmation" id="hCi-U5-UHu">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="navigation_button" id="iYt-yp-jbY"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBtn" destination="iYt-yp-jbY" id="NA1-AA-01J"/>
@@ -1570,9 +1570,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRm-KB-cAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6830" y="-1945"/>
+            <point key="canvasLocation" x="6829.6000000000004" y="-1945.2773613193406"/>
         </scene>
-        <!--Beneficirary List Controller-->
+        <!--Beneficiary List-->
         <scene sceneID="tNm-8I-aXp">
             <objects>
                 <viewController id="IzW-5K-ORh" customClass="BeneficiraryListController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
@@ -1581,19 +1581,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VVu-MI-yZL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxJ-Kh-TR9">
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-7L-LGI">
-                                        <rect key="frame" x="10" y="12.5" width="128" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-7L-LGI">
+                                        <rect key="frame" x="0.0" y="12.5" width="187.5" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBf-59-H1g">
-                                        <rect key="frame" x="163" y="12.5" width="147" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBf-59-H1g">
+                                        <rect key="frame" x="187.5" y="12.5" width="187.5" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1601,12 +1601,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.45550819186407931" green="0.10904451507642807" blue="0.74607392127055849" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="VBf-59-H1g" firstAttribute="leading" secondItem="KM4-7L-LGI" secondAttribute="trailing" id="7UI-7a-Cum"/>
-                                    <constraint firstItem="KM4-7L-LGI" firstAttribute="centerY" secondItem="lxJ-Kh-TR9" secondAttribute="centerY" id="9hg-AS-zTp"/>
-                                    <constraint firstItem="VBf-59-H1g" firstAttribute="centerY" secondItem="lxJ-Kh-TR9" secondAttribute="centerY" id="Ix0-WQ-lup"/>
+                                    <constraint firstAttribute="trailing" secondItem="VBf-59-H1g" secondAttribute="trailing" id="9ic-p7-6X6"/>
+                                    <constraint firstItem="KM4-7L-LGI" firstAttribute="leading" secondItem="lxJ-Kh-TR9" secondAttribute="leading" id="UTh-Nd-1d5"/>
                                     <constraint firstAttribute="height" constant="50" id="aQh-iZ-goc"/>
-                                    <constraint firstItem="KM4-7L-LGI" firstAttribute="leading" secondItem="lxJ-Kh-TR9" secondAttribute="leading" constant="10" id="bW2-B0-jo0"/>
-                                    <constraint firstAttribute="trailing" secondItem="VBf-59-H1g" secondAttribute="trailing" constant="10" id="iyV-ib-21s"/>
+                                    <constraint firstItem="VBf-59-H1g" firstAttribute="width" secondItem="lxJ-Kh-TR9" secondAttribute="width" multiplier="0.5" id="bL3-xc-Zlq"/>
+                                    <constraint firstItem="KM4-7L-LGI" firstAttribute="width" secondItem="lxJ-Kh-TR9" secondAttribute="width" multiplier="0.5" id="cec-pd-CU0"/>
+                                    <constraint firstItem="VBf-59-H1g" firstAttribute="centerY" secondItem="lxJ-Kh-TR9" secondAttribute="centerY" id="fzR-Go-BEs"/>
+                                    <constraint firstItem="KM4-7L-LGI" firstAttribute="centerY" secondItem="lxJ-Kh-TR9" secondAttribute="centerY" id="st5-SE-CM7"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NOQ-cH-lTV">
@@ -1668,7 +1669,7 @@
                             <constraint firstItem="lxJ-Kh-TR9" firstAttribute="top" secondItem="MzF-PZ-dvM" secondAttribute="top" id="MnH-qB-gKW"/>
                             <constraint firstItem="lxJ-Kh-TR9" firstAttribute="leading" secondItem="MzF-PZ-dvM" secondAttribute="leading" id="RPN-av-kPx"/>
                             <constraint firstItem="NOQ-cH-lTV" firstAttribute="top" secondItem="lxJ-Kh-TR9" secondAttribute="bottom" id="VRo-zP-Aw7"/>
-                            <constraint firstItem="VVu-MI-yZL" firstAttribute="top" secondItem="MzF-PZ-dvM" secondAttribute="top" id="XaC-F9-hjU"/>
+                            <constraint firstItem="VVu-MI-yZL" firstAttribute="top" secondItem="SVx-JP-nUH" secondAttribute="top" id="Xlk-hS-x9W"/>
                             <constraint firstItem="NOQ-cH-lTV" firstAttribute="trailing" secondItem="MzF-PZ-dvM" secondAttribute="trailing" id="YVW-aa-9XV"/>
                             <constraint firstAttribute="bottom" secondItem="VVu-MI-yZL" secondAttribute="bottom" id="axT-tU-doV"/>
                             <constraint firstItem="NOQ-cH-lTV" firstAttribute="bottom" secondItem="MzF-PZ-dvM" secondAttribute="bottom" id="fje-9C-Qn9"/>
@@ -1677,8 +1678,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MzF-PZ-dvM"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZeA-gk-VBt">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="smackBurger" id="bCX-3Z-zk0"/>
+                    <navigationItem key="navigationItem" title="Beneficiary List" id="ZeA-gk-VBt">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="navigation_button" id="bCX-3Z-zk0"/>
                     </navigationItem>
                     <connections>
                         <outlet property="label_total_ben" destination="KM4-7L-LGI" id="EvP-b6-DWV"/>
@@ -1689,7 +1690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIs-6O-fVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3675" y="-1944.7183098591549"/>
+            <point key="canvasLocation" x="3674.4000000000001" y="-1945.2773613193406"/>
         </scene>
         <!--Reset Password Controller-->
         <scene sceneID="vhg-LX-Maz">
@@ -1855,7 +1856,7 @@
             </objects>
             <point key="canvasLocation" x="8454" y="-340"/>
         </scene>
-        <!--Payment Error Controller-->
+        <!--Error-->
         <scene sceneID="tqW-A9-4fU">
             <objects>
                 <viewController id="GfG-Lx-QM3" customClass="PaymentErrorController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
@@ -1864,7 +1865,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jrY-G1-r18">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QZ-hX-Cfi" customClass="CustomButtonRounded" customModule="smartremit" customModuleProvider="target">
                                 <rect key="frame" x="19" y="383.5" width="337.5" height="50"/>
@@ -1905,6 +1906,7 @@
                         <constraints>
                             <constraint firstItem="7g1-V6-8X8" firstAttribute="trailing" secondItem="jrY-G1-r18" secondAttribute="trailing" id="2Hp-xM-fxa"/>
                             <constraint firstItem="C8x-9b-Q5v" firstAttribute="width" secondItem="IbO-bn-lyh" secondAttribute="width" multiplier="0.6" id="5E0-ez-RxB"/>
+                            <constraint firstItem="jrY-G1-r18" firstAttribute="top" secondItem="IbO-bn-lyh" secondAttribute="top" id="7b7-iI-cbd"/>
                             <constraint firstItem="7QZ-hX-Cfi" firstAttribute="width" secondItem="IbO-bn-lyh" secondAttribute="width" multiplier="0.6" id="7uI-LU-WO9"/>
                             <constraint firstItem="7QZ-hX-Cfi" firstAttribute="top" secondItem="C8x-9b-Q5v" secondAttribute="bottom" constant="30" id="865-Iv-K0z">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -1918,7 +1920,6 @@
                             <constraint firstItem="C8x-9b-Q5v" firstAttribute="top" secondItem="1bO-j7-oow" secondAttribute="bottom" constant="30" id="UgV-Eh-xAK">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
-                            <constraint firstItem="jrY-G1-r18" firstAttribute="top" secondItem="7g1-V6-8X8" secondAttribute="top" id="e06-LP-Kgg"/>
                             <constraint firstItem="jrY-G1-r18" firstAttribute="leading" secondItem="7g1-V6-8X8" secondAttribute="leading" id="gDe-hA-eML"/>
                             <constraint firstItem="C8x-9b-Q5v" firstAttribute="width" secondItem="IbO-bn-lyh" secondAttribute="width" multiplier="0.9" id="sqv-ag-P9w"/>
                         </constraints>
@@ -1938,8 +1939,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="TI2-iq-9QN">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="smackBurger" id="sUp-Pw-umq"/>
+                    <navigationItem key="navigationItem" title="Error" id="TI2-iq-9QN">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="navigation_button" id="sUp-Pw-umq"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBtn" destination="sUp-Pw-umq" id="WEf-Ks-rNc"/>
@@ -1947,9 +1948,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wh-qb-NTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7788" y="-1945"/>
+            <point key="canvasLocation" x="7788" y="-1945.2773613193406"/>
         </scene>
-        <!--Bank Details Controller-->
+        <!--Bank Details-->
         <scene sceneID="Op1-Bg-cmb">
             <objects>
                 <viewController id="aoB-jJ-Kud" customClass="BankDetailsController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
@@ -1958,7 +1959,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="325-I8-XMX">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-VK-3FP">
                                 <rect key="frame" x="0.0" y="94" width="375" height="573"/>
@@ -2371,9 +2372,9 @@
                             <constraint firstItem="c13-nX-GhB" firstAttribute="centerX" secondItem="coq-lY-sdh" secondAttribute="centerX" id="4wa-sN-WMQ"/>
                             <constraint firstAttribute="bottom" secondItem="OaK-VK-3FP" secondAttribute="bottom" id="5YX-F4-0Yp"/>
                             <constraint firstItem="c13-nX-GhB" firstAttribute="width" secondItem="coq-lY-sdh" secondAttribute="width" id="Ch9-CL-aOY"/>
+                            <constraint firstItem="325-I8-XMX" firstAttribute="top" secondItem="coq-lY-sdh" secondAttribute="top" id="Lih-rh-30W"/>
                             <constraint firstItem="cKf-2R-p8t" firstAttribute="width" secondItem="coq-lY-sdh" secondAttribute="width" multiplier="0.9" id="PJg-yw-1tJ"/>
                             <constraint firstItem="o4Z-ny-rRm" firstAttribute="trailing" secondItem="325-I8-XMX" secondAttribute="trailing" id="Rxu-zW-6ft"/>
-                            <constraint firstItem="325-I8-XMX" firstAttribute="top" secondItem="o4Z-ny-rRm" secondAttribute="top" id="YCn-xI-wNi"/>
                             <constraint firstItem="o4Z-ny-rRm" firstAttribute="trailing" secondItem="OaK-VK-3FP" secondAttribute="trailing" id="cTA-Th-hjV"/>
                             <constraint firstItem="c13-nX-GhB" firstAttribute="top" secondItem="o4Z-ny-rRm" secondAttribute="top" id="cyJ-vr-r3c"/>
                             <constraint firstItem="325-I8-XMX" firstAttribute="leading" secondItem="o4Z-ny-rRm" secondAttribute="leading" id="gHZ-mg-8VD"/>
@@ -2394,8 +2395,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="PQr-Yn-0Wd">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="smackBurger" id="444-4H-eBt"/>
+                    <navigationItem key="navigationItem" title="Bank Details" id="PQr-Yn-0Wd">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="navigation_button" id="444-4H-eBt"/>
                     </navigationItem>
                     <connections>
                         <outlet property="accountStack" destination="aLl-lY-a75" id="E5c-bj-0Jm"/>
@@ -2421,7 +2422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OH2-fS-v9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4714" y="-1945"/>
+            <point key="canvasLocation" x="4712.8000000000002" y="-1945.2773613193406"/>
         </scene>
         <!--Upload File Controller-->
         <scene sceneID="Ah9-Tk-GlW">
@@ -2885,9 +2886,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NDi-fZ-vKN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6NT-OS-uba">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="6NT-OS-uba">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.27570745348930359" green="0.077288530766963959" blue="0.34976983070373535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -2903,9 +2909,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ivZ-4a-0kZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JsR-h7-jQZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="JsR-h7-jQZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -2949,6 +2960,7 @@
         <image name="logo new color" width="151.67999267578125" height="151.67999267578125"/>
         <image name="logout" width="128" height="128"/>
         <image name="method" width="96" height="96"/>
+        <image name="navigation_button" width="9.6000003814697266" height="7.440000057220459"/>
         <image name="purpose" width="96" height="96"/>
         <image name="rsz_man" width="48" height="48"/>
         <image name="rsz_pencil-512" width="48" height="48"/>
