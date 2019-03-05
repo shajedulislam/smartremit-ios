@@ -25,6 +25,10 @@ class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         menuOptionsIcon = [UIImage(named: "home_green")!,UIImage(named: "addRecipient")!,UIImage(named: "password")!,UIImage(named: "upload")!]
         
+        let resetPassClick = UserDefaults.standard
+        
+        resetPassClick.set("granted", forKey: "RessetPasswordClick")
+        
 
     }
     
@@ -62,7 +66,12 @@ class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
         else if(menuOptions[indexPath.row] == "Reset Password")
         {
             selected = "ResetPassword"
-            travelScreenBySegue()
+            if((UserDefaults.standard.string(forKey: "RessetPasswordClick")) == "granted")
+            {
+                NotificationCenter.default.post(name: NSNotification.Name("showResetPassword"), object: nil)
+            }
+            
+            //travelScreenBySegue()
         }
         else if(menuOptions[indexPath.row] == "Upload File")
         {

@@ -9,11 +9,37 @@
 import UIKit
 
 class ResetPasswordController: UIViewController {
-
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        menuBtn.target = revealViewController()
+        menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
+        
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        
+        self.revealViewController()?.rightRevealToggle(self)
+        
+        super.viewDidLoad()
+        
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ResetPasswordController.back(sender:)))
+        self.navigationItem.leftBarButtonItem = newBackButton
+        
+//        let customBackButton = UIBarButtonItem( image: UIImage(named: "backarrow") , style: .plain, target: self, action: #selector(back(sender:)))
+//        customBackButton.imageInsets = UIEdgeInsets(top: 2, left: -8, bottom: 0, right: 0)
+//        navigationItem.leftBarButtonItem = customBackButton
+        
+        UserDefaults.standard.set("grantOff", forKey: "RessetPasswordClick")
+    }
+    
+    @objc func back(sender: UIBarButtonItem) {
+        
+        UserDefaults.standard.set("granted", forKey: "RessetPasswordClick")
+        _ = navigationController?.popViewController(animated: true)
     }
     
     @IBAction func backBtnToBenList(_ sender: UIButton) {

@@ -10,7 +10,7 @@ import UIKit
 
 class BeneficiraryListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //static var instance = BeneficiraryListController()
+    static var instance = BeneficiraryListController()
     
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     
@@ -25,12 +25,13 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-       
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showResetPassword), name: NSNotification.Name("showResetPassword"), object: nil)
+    
         showBenLabel()
        
         menuBtn.target = revealViewController()
         menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
-        
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -70,11 +71,16 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     }
     
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-       
-        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
        performSegue(withIdentifier: "BankDetails", sender: nil)
+    }
+    
+   
+    
+    @objc func showResetPassword()
+    {
+        performSegue(withIdentifier: "ResetPassword", sender: nil)
     }
     
 //    func navbarimg(){
