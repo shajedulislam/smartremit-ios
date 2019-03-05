@@ -10,12 +10,13 @@ import UIKit
 
 class PaymentConfirmationController: UIViewController {
 
-    @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
-
+        menuBtn.target = revealViewController()
+        menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
         // Do any additional setup after loading the view.
     }
    

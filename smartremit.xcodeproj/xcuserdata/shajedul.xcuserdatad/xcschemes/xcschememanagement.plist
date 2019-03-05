@@ -12,7 +12,7 @@
 		<key>smartremit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>smartremitUITesting.xcscheme_^#shared#^_</key>
 		<dict>
@@ -33,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>6D649F232215481B0038CF0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6F9DE5222BA6FF0093560F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

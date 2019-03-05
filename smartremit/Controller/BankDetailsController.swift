@@ -10,7 +10,8 @@ import UIKit
 
 class BankDetailsController: UIViewController{
     
-    @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
+    
     
     @IBOutlet weak var choosePurposeLabel: UILabel!
     @IBOutlet weak var chooseMethodLabel: UILabel!
@@ -67,7 +68,8 @@ class BankDetailsController: UIViewController{
         //the_main_stack.isHidden = true
         
         
-        //menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: .touchUpInside)
+        menuBtn.target = revealViewController()
+        menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
 
     }
   
