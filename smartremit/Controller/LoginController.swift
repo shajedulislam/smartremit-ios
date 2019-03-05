@@ -194,6 +194,8 @@ class LoginController: UIViewController {
         self.warningStack.isHidden = true
         warningText.text = "Please insert your credentials"
         
+        //SidemenuController.instance.sidebarOptionChange()
+        
         self.revealViewController().rightViewController.performSegue(withIdentifier: "Verification", sender: self.revealViewController().rightViewController)
     }
     

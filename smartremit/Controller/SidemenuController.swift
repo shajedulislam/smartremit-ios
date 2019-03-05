@@ -10,24 +10,39 @@ import UIKit
 
 class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    static var instance = SidemenuController()
+    
     var menuOptions:Array = [String]()
     var menuOptionsIcon:Array = [UIImage]()
     
     var selected = ""
+    
+    var optionChange = 0
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
   
-        self.revealViewController().rightViewRevealWidth = self.view.frame.width/2 + 100
+       // self.revealViewController().rightViewRevealWidth = self.view.frame.width/2 + 100
         
-        menuOptions = ["Home","Add Recipient","Reset Password","Upload File"]
+        if(optionChange == 0)
+        {
+            menuOptions = ["Home"]
+            menuOptionsIcon = [UIImage(named: "home_green")!]
+        }
+        else if(optionChange == 1)
+        {
+            menuOptions = ["Home","Add Recipient","Reset Password","Upload File"]
+            
+            
+            menuOptionsIcon = [UIImage(named: "home_green")!,UIImage(named: "addRecipient")!,UIImage(named: "password")!,UIImage(named: "upload")!]
+        }
         
-        menuOptionsIcon = [UIImage(named: "home_green")!,UIImage(named: "addRecipient")!,UIImage(named: "password")!,UIImage(named: "upload")!]
         
-        let resetPassClick = UserDefaults.standard
         
-        resetPassClick.set("granted", forKey: "RessetPasswordClick")
+    
+        UserDefaults.standard.set("granted", forKey: "AddRecipientClick")
+        UserDefaults.standard.set("granted", forKey: "RessetPasswordClick")
         
 
     }
@@ -65,12 +80,11 @@ class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         else if(menuOptions[indexPath.row] == "Reset Password")
         {
-            selected = "ResetPassword"
             if((UserDefaults.standard.string(forKey: "RessetPasswordClick")) == "granted")
             {
                 NotificationCenter.default.post(name: NSNotification.Name("showResetPassword"), object: nil)
             }
-            
+            //selected = "ResetPassword"
             //travelScreenBySegue()
         }
         else if(menuOptions[indexPath.row] == "Upload File")
@@ -80,8 +94,12 @@ class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         else if(menuOptions[indexPath.row] == "Add Recipient")
         {
-            selected = "AddRecipient"
-            travelScreenBySegue()
+            if((UserDefaults.standard.string(forKey: "AddRecipientClick")) == "granted")
+            {
+                NotificationCenter.default.post(name: NSNotification.Name("showAddRecipient"), object: nil)
+            }
+//            selected = "AddRecipient"
+//            travelScreenBySegue()
         }
        
         
@@ -101,6 +119,13 @@ class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
         logout.modalPresentationStyle = .custom
         
         present(logout, animated: true, completion: nil)
+        
+    }
+    
+    func sidebarOptionChange()
+    {
+        
+      
         
     }
     

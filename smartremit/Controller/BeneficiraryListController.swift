@@ -27,6 +27,8 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         NotificationCenter.default.addObserver(self, selector: #selector(showResetPassword), name: NSNotification.Name("showResetPassword"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showAddRecipient), name: NSNotification.Name("showAddRecipient"), object: nil)
     
         showBenLabel()
        
@@ -81,6 +83,11 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     @objc func showResetPassword()
     {
         performSegue(withIdentifier: "ResetPassword", sender: nil)
+    }
+    
+    @objc func showAddRecipient()
+    {
+        performSegue(withIdentifier: "AddRecipient", sender: nil)
     }
     
 //    func navbarimg(){
