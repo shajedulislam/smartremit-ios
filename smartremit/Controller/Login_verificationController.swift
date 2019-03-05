@@ -14,6 +14,10 @@ class Login_verificationController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
         
     }
     
