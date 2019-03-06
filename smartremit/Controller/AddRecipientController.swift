@@ -30,13 +30,13 @@ class AddRecipientController: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
-        self.revealViewController()?.rightRevealToggle(self)
+        //self.revealViewController()?.rightRevealToggle(self)
 
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ResetPasswordController.back(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
         
-        UserDefaults.standard.set("grantOff", forKey: "AddRecipientClick")
+        //UserDefaults.standard.set("granted", forKey: "AddRecipientClick")
     }
     
     @objc func back(sender: UIBarButtonItem)

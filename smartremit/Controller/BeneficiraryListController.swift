@@ -29,6 +29,8 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         NotificationCenter.default.addObserver(self, selector: #selector(showResetPassword), name: NSNotification.Name("showResetPassword"), object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(showAddRecipient), name: NSNotification.Name("showAddRecipient"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(popViewController), name: NSNotification.Name("popViewController"), object: nil)
     
         showBenLabel()
        
@@ -88,6 +90,22 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     @objc func showAddRecipient()
     {
         performSegue(withIdentifier: "AddRecipient", sender: nil)
+    }
+    
+    @objc func popViewController()
+    {
+        navigationController?.popViewController(animated: false)
+        //navigationController?.pushViewController(AddRecipientController(), animated: true)
+        
+//        for vc in (self.navigationController?.viewControllers)!
+//
+//        {
+//            if vc is AddRecipientController
+//            {
+//                _ = self.navigationController?.popToViewController(vc, animated: true)
+//            }
+//        }
+        
     }
     
 //    func navbarimg(){

@@ -23,6 +23,14 @@ class Login_verificationController: UIViewController {
     
     @IBAction func VerificationDone(_ sender: Any) {
         
+        UserDefaults.standard.set("verDone", forKey: "verDone")
+        
+        NotificationCenter.default.post(name: NSNotification.Name("enableSideBarOptions"), object: nil)
+        
+        print("invoked2")
+        
+        //Used to let SidebarController know Login Done
+        
         self.revealViewController().rightViewController.performSegue(withIdentifier: "BeneficiaryList", sender: self.revealViewController().rightViewController)
     }
     

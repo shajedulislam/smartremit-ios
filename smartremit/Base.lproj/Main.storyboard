@@ -345,7 +345,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwb-PF-0FI">
-                                                            <rect key="frame" x="0.0" y="11.5" width="768" height="32"/>
+                                                            <rect key="frame" x="0.0" y="11.5" width="320" height="32"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-hd-bOm">
                                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="32"/>
@@ -355,7 +355,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3lK-JH-e1j">
-                                                                    <rect key="frame" x="15" y="0.0" width="753" height="32"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="305" height="32"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-JV-b5m">
                                                                             <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -365,7 +365,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-NV-GFQ">
-                                                                            <rect key="frame" x="40" y="0.0" width="713" height="32"/>
+                                                                            <rect key="frame" x="40" y="0.0" width="265" height="32"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="32" id="8I7-OT-eA9"/>
                                                                             </constraints>
@@ -472,6 +472,7 @@
                         <viewLayoutGuide key="safeArea" id="qUg-74-yxr"/>
                     </view>
                     <connections>
+                        <outlet property="sideBarTable" destination="JYw-9b-eDO" id="w2h-eJ-Euc"/>
                         <segue destination="BYZ-38-t0r" kind="custom" identifier="Home" customClass="SWRevealViewControllerSeguePushController" id="3rb-md-cmW"/>
                         <segue destination="xuQ-CL-Akl" kind="custom" identifier="UploadFile" customClass="SWRevealViewControllerSeguePushController" id="UzP-KU-joy"/>
                         <segue destination="ivZ-4a-0kZ" kind="custom" identifier="BeneficiaryList" customClass="SWRevealViewControllerSeguePushController" id="OOg-Q5-3Ox"/>
@@ -1571,7 +1572,7 @@
                                                     <rect key="frame" x="0.0" y="13.5" width="50" height="50"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_pencil-512" translatesAutoresizingMaskIntoConstraints="NO" id="0qX-fY-DIC">
-                                                    <rect key="frame" x="720" y="13.5" width="48" height="48"/>
+                                                    <rect key="frame" x="272" y="13.5" width="48" height="48"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f44-Mf-Awh">
                                                     <rect key="frame" x="56" y="11" width="197" height="33"/>

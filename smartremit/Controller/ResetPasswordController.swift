@@ -21,7 +21,7 @@ class ResetPasswordController: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
-        self.revealViewController()?.rightRevealToggle(self)
+        //self.revealViewController()?.rightRevealToggle(self)
         
         super.viewDidLoad()
         
@@ -29,11 +29,13 @@ class ResetPasswordController: UIViewController {
         let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ResetPasswordController.back(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
         
+        UserDefaults.standard.set("granted", forKey: "RessetPasswordClick")
+        
 //        let customBackButton = UIBarButtonItem( image: UIImage(named: "backarrow") , style: .plain, target: self, action: #selector(back(sender:)))
 //        customBackButton.imageInsets = UIEdgeInsets(top: 2, left: -8, bottom: 0, right: 0)
 //        navigationItem.leftBarButtonItem = customBackButton
         
-        UserDefaults.standard.set("grantOff", forKey: "RessetPasswordClick")
+        
     }
     
     @objc func back(sender: UIBarButtonItem) {
