@@ -18,6 +18,7 @@ class AddRecipientController: UIViewController {
     @IBOutlet weak var toBankAccountBtn: CustomButtonRounded!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         OptionsContainerStack.isHidden = true
@@ -29,14 +30,10 @@ class AddRecipientController: UIViewController {
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
-        
-        //self.revealViewController()?.rightRevealToggle(self)
 
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ResetPasswordController.back(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
-        
-        //UserDefaults.standard.set("granted", forKey: "AddRecipientClick")
     }
     
     @objc func back(sender: UIBarButtonItem)
@@ -45,7 +42,6 @@ class AddRecipientController: UIViewController {
         _ = navigationController?.popViewController(animated: true)
     }
  
-   
     @IBAction func cashPickupTapped(_ sender: Any)
     {
         OptionsContainerStack.isHidden = false
@@ -67,15 +63,16 @@ class AddRecipientController: UIViewController {
     
 }
 
-extension UIButton{
-    func borderColorForBtn()
+    extension UIButton
     {
-        self.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        self.layer.borderWidth = 2
+        func borderColorForBtn()
+        {
+            self.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            self.layer.borderWidth = 2
+        }
+        func noBorderForBtn()
+        {
+            self.layer.borderColor = nil
+            self.layer.borderWidth = 0
+        }
     }
-    func noBorderForBtn()
-    {
-        self.layer.borderColor = nil
-        self.layer.borderWidth = 0
-    }
-}

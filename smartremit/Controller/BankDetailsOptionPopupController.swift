@@ -11,6 +11,7 @@ import UIKit
 class BankDetailsOptionPopupController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var popupHeaderText: UILabel!
+    
     var optionToShow : String = ""
     
     var optionList = [""]
@@ -18,9 +19,7 @@ class BankDetailsOptionPopupController: UIViewController, UIPickerViewDelegate, 
     var choosenOption : String = ""
     
     var onDone: ((_ data: String) -> ())?
-    
-    //let methodList = ["To Bank Account","Cash Pick-up (PIN)"]
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,10 +62,6 @@ class BankDetailsOptionPopupController: UIViewController, UIPickerViewDelegate, 
         }
     }
     
-    
-    
-    
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -82,7 +77,6 @@ class BankDetailsOptionPopupController: UIViewController, UIPickerViewDelegate, 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         choosenOption = optionList[row]
-        
     }
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         
@@ -91,15 +85,11 @@ class BankDetailsOptionPopupController: UIViewController, UIPickerViewDelegate, 
         return myTitle
     }
     
-    
     @IBAction func closeOptionMenu(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
-        
     }
-    
 
-  
     @IBAction func doneSelectingOption(_ sender: Any) {
         
         onDone?(choosenOption)

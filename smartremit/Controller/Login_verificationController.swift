@@ -10,15 +10,12 @@ import UIKit
 
 class Login_verificationController: UIViewController {
 
- 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        
-        
     }
     
     @IBAction func VerificationDone(_ sender: Any) {
@@ -26,11 +23,7 @@ class Login_verificationController: UIViewController {
         UserDefaults.standard.set("verDone", forKey: "verDone")
         
         NotificationCenter.default.post(name: NSNotification.Name("enableSideBarOptions"), object: nil)
-        
-        print("invoked2")
-        
-        //Used to let SidebarController know Login Done
-        
+
         self.revealViewController().rightViewController.performSegue(withIdentifier: "BeneficiaryList", sender: self.revealViewController().rightViewController)
     }
     

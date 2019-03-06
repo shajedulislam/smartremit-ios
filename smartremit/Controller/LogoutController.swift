@@ -11,21 +11,17 @@ import UIKit
 class LogoutController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func LogoutCancel(_ sender: Any)
     {
-        
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func YesForLogout(_ sender: Any)
     {
-        
         
     }
     

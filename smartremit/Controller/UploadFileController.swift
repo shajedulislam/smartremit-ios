@@ -9,25 +9,36 @@
 import UIKit
 
 class UploadFileController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-    @IBOutlet weak var imageView: CustomeImageViewDesign!
     
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
+    @IBOutlet weak var imageView: CustomeImageViewDesign!
     @IBOutlet weak var selectBtnForFileUp: CustomButtonRounded!
     
     var selectionImg = false
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        menuBtn.target = revealViewController()
+        menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ResetPasswordController.back(sender:)))
+        self.navigationItem.leftBarButtonItem = newBackButton
+
         imageView.isHidden = true
     }
-   
     
-    
-    
-    //////All Atribute Functions/////////
-  
+    @objc func back(sender: UIBarButtonItem) {
+        
+        UserDefaults.standard.set("granted", forKey: "UploadFileClick")
+        _ = navigationController?.popViewController(animated: true)
+    }
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
     {
         imageView.isHidden = false
@@ -36,16 +47,12 @@ class UploadFileController: UIViewController, UIImagePickerControllerDelegate, U
         
         imageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         self.dismiss(animated: true, completion: nil)
-    
     }
-    
   
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
     {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    ///////All Button Actions//////
     
     @IBAction func selectBtntappedForUpload(_ sender: Any) {
         
@@ -74,8 +81,6 @@ class UploadFileController: UIViewController, UIImagePickerControllerDelegate, U
         self.revealViewController().rightViewController.performSegue(withIdentifier: "BeneficiaryList", sender: self.revealViewController().rightViewController)
     }
     
-    //////Custom Functions//////
-    
     func selectImage()
     {
         let myPickerController = UIImagePickerController()
@@ -83,8 +88,7 @@ class UploadFileController: UIViewController, UIImagePickerControllerDelegate, U
         myPickerController.sourceType = UIImagePickerController.SourceType.photoLibrary
         self.present(myPickerController, animated: true, completion: nil)
     }
-    
-    //Data Service Point
+
     func uploadImage()
     {
         imageView.image = nil

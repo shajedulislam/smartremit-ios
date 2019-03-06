@@ -12,7 +12,6 @@ class BankDetailsController: UIViewController{
     
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     
-    
     @IBOutlet weak var choosePurposeLabel: UILabel!
     @IBOutlet weak var chooseMethodLabel: UILabel!
     @IBOutlet weak var chooseBankLabel: UILabel!
@@ -21,19 +20,14 @@ class BankDetailsController: UIViewController{
     @IBOutlet weak var chooseAccountLabel: UILabel!
     
     //The main stack for all
-    
     @IBOutlet weak var the_main_stack: UIStackView!
     
     //row stacks of options
-    
-    
     @IBOutlet weak var purpose_method_stack: UIStackView!
     @IBOutlet weak var bank_district_stack: UIStackView!
     @IBOutlet weak var branch_account_stack: UIStackView!
     
-    
     //stacks of options
-    
     @IBOutlet weak var purposeStack: UIStackView!
     @IBOutlet weak var methodStack: UIStackView!
     @IBOutlet weak var bankStack: UIStackView!
@@ -45,6 +39,7 @@ class BankDetailsController: UIViewController{
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         //BeneficiraryListController.instance.navbarimg()
@@ -60,22 +55,14 @@ class BankDetailsController: UIViewController{
         continiueBtn.isHidden = true
         
         //hiding row wise stacks which contains option stacks
-        //purpose_method_stack.isHidden = true
         bank_district_stack.isHidden = true
         branch_account_stack.isHidden = true
         
-        //hiding the main stack that contains everything
-        //the_main_stack.isHidden = true
-        
-        
         menuBtn.target = revealViewController()
         menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
-
     }
-  
-    
+
     //------------------Button Action Functions
-    
     @IBAction func BackBtnToBenList(_ sender: Any) {
         
         self.revealViewController().rightViewController.performSegue(withIdentifier: "BeneficiaryList", sender: self.revealViewController().rightViewController)
@@ -107,7 +94,6 @@ class BankDetailsController: UIViewController{
         {
             optionReceiver(optionName: "account")
         }
-        
     }
     
     @IBAction func continueBtnPressed(_ sender: Any) {
@@ -115,7 +101,6 @@ class BankDetailsController: UIViewController{
     }
     
     //----------------Custom Functiins
-    
     func optionReceiver(optionName : String)
     {
 
@@ -127,8 +112,7 @@ class BankDetailsController: UIViewController{
         self.present(popup, animated: true)
         
         popup.onDone = { (data) in
-       
-        
+
         if(optionName == "purpose")
         {
             self.choosePurposeLabel.text = data
@@ -161,9 +145,7 @@ class BankDetailsController: UIViewController{
             self.chooseAccountLabel.text = data
             self.continiueBtn.isHidden = false
         }
-            
 
         }
     }
-    
 }

@@ -23,20 +23,16 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
-        
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         NotificationCenter.default.addObserver(self, selector: #selector(showResetPassword), name: NSNotification.Name("showResetPassword"), object: nil)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(showAddRecipient), name: NSNotification.Name("showAddRecipient"), object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(popViewController), name: NSNotification.Name("popViewController"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showUploadFile), name: NSNotification.Name("showUploadFile"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(popToRootViewController), name: NSNotification.Name("popToRootViewController"), object: nil)
     
         showBenLabel()
-       
         menuBtn.target = revealViewController()
         menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
-        
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
@@ -46,11 +42,11 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         
         label_total_ben.text = "Benificiary: " + String(benList.count)
         var sum = 0.0
-        for n in 0...benList.count-1{
+        for n in 0...benList.count-1
+        {
             sum = sum + benList[n].getSent()
         }
        label_total_gbp.text = "Total (GBP): " + String(sum)
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,15 +58,13 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         cell.label_name.text = benList[indexPath.row].getName()
         cell.label_name.textColor = UIColor.white
         cell.label_trnsHistory.text = "Trans: " + String(benList[indexPath.row].getNoOfTrns()) + ", Sent (GBP): " + String(benList[indexPath.row].getSent())
         cell.label_trnsHistory.textColor = UIColor.white
-     
-        //  cell.sent.text = "Sent (GBP): " + String(benList[indexPath.row].getSent())
-      //  cell.sent.textColor = UIColor.white
+        
         return cell
     }
     
@@ -79,9 +73,7 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     {
        performSegue(withIdentifier: "BankDetails", sender: nil)
     }
-    
-   
-    
+
     @objc func showResetPassword()
     {
         performSegue(withIdentifier: "ResetPassword", sender: nil)
@@ -92,9 +84,14 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         performSegue(withIdentifier: "AddRecipient", sender: nil)
     }
     
-    @objc func popViewController()
+    @objc func showUploadFile()
     {
-        navigationController?.popViewController(animated: false)
+        performSegue(withIdentifier: "UploadFile", sender: nil)
+    }
+    
+    @objc func popToRootViewController()
+    {
+        navigationController?.popToRootViewController(animated: false)
         //navigationController?.pushViewController(AddRecipientController(), animated: true)
         
 //        for vc in (self.navigationController?.viewControllers)!
@@ -114,6 +111,5 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
 //        
 //        
 //    }
-    
 
 }

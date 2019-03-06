@@ -12,14 +12,11 @@ class GetstartedController: UIViewController {
 
   
     override func viewDidLoad() {
-        super.viewDidLoad()
         
- 
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()
     }
     
     @IBAction func getStartedBtn(_ sender: Any) {
-        //performSegue(withIdentifier: "Login", sender: nil)
     }
     
 
