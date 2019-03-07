@@ -36,6 +36,8 @@
 		6DA74531221C68850001AD72 /* CustomLineByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA74530221C68850001AD72 /* CustomLineByView.swift */; };
 		6DA81D26221BCD9800DC82FB /* AddRecipientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA81D25221BCD9800DC82FB /* AddRecipientController.swift */; };
 		6DA81D28221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA81D27221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift */; };
+		6DA9B6A022313E5100E757C2 /* TransactionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9B69F22313E5100E757C2 /* TransactionTableCell.swift */; };
+		6DA9B6A222313E9500E757C2 /* TransactionStatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9B6A122313E9500E757C2 /* TransactionStatusController.swift */; };
 		6DB12DB12219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB12DB02219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift */; };
 		6DB12DB52219C24700D8EBE7 /* BeneficiraryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB12DB42219C24700D8EBE7 /* BeneficiraryListController.swift */; };
 		6DB12DB72219D71300D8EBE7 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB12DB62219D71300D8EBE7 /* ResetPasswordController.swift */; };
@@ -98,6 +100,8 @@
 		6DA74530221C68850001AD72 /* CustomLineByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLineByView.swift; sourceTree = "<group>"; };
 		6DA81D25221BCD9800DC82FB /* AddRecipientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipientController.swift; sourceTree = "<group>"; };
 		6DA81D27221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldHalfRoundedClear.swift; sourceTree = "<group>"; };
+		6DA9B69F22313E5100E757C2 /* TransactionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableCell.swift; sourceTree = "<group>"; };
+		6DA9B6A122313E9500E757C2 /* TransactionStatusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusController.swift; sourceTree = "<group>"; };
 		6DB12DB02219C00B00D8EBE7 /* CustomButtonHalfRoundedPink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonHalfRoundedPink.swift; sourceTree = "<group>"; };
 		6DB12DB42219C24700D8EBE7 /* BeneficiraryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiraryListController.swift; sourceTree = "<group>"; };
 		6DB12DB62219D71300D8EBE7 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 				6DD01C8022270650006CFB5E /* PaymentErrorController.swift */,
 				6DDA27822227D77F008E07E1 /* OptionPopupController.swift */,
 				6D08B5CE2231309600574E7E /* PaymentLimitationController.swift */,
+				6DA9B69F22313E5100E757C2 /* TransactionTableCell.swift */,
+				6DA9B6A122313E9500E757C2 /* TransactionStatusController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,10 +402,12 @@
 				6D649F0B221548190038CF0F /* GetstartedController.swift in Sources */,
 				6D649F09221548190038CF0F /* AppDelegate.swift in Sources */,
 				6D04D86422230DB400F2D234 /* Login.swift in Sources */,
+				6DA9B6A022313E5100E757C2 /* TransactionTableCell.swift in Sources */,
 				6D2494A22218166400F600C8 /* Login_verificationController.swift in Sources */,
 				6D58E5182216BE6E00E40D18 /* CustomButtonHalfRounded.swift in Sources */,
 				6D08B5CF2231309600574E7E /* PaymentLimitationController.swift in Sources */,
 				6DA81D28221C066C00DC82FB /* CustomTextFieldHalfRoundedClear.swift in Sources */,
+				6DA9B6A222313E9500E757C2 /* TransactionStatusController.swift in Sources */,
 				6DB12DB72219D71300D8EBE7 /* ResetPasswordController.swift in Sources */,
 				6DDA27832227D77F008E07E1 /* OptionPopupController.swift in Sources */,
 				6D04D86822230DE000F2D234 /* RegistrationData.swift in Sources */,

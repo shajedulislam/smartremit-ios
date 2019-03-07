@@ -1681,6 +1681,7 @@
                         <segue destination="pqH-HY-S4k" kind="show" identifier="AddRecipient" id="mHe-jy-gw5"/>
                         <segue destination="xuQ-CL-Akl" kind="show" identifier="UploadFile" id="Mr2-kf-GDp"/>
                         <segue destination="Wyp-Pt-j9h" kind="show" identifier="PaymentLimitation" id="OMv-qz-EmF"/>
+                        <segue destination="g3N-wU-IvZ" kind="show" identifier="TransactionStatus" id="3rT-aM-ywt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIs-6O-fVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2646,6 +2647,85 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tf-de-XKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7231.875" y="-850.35211267605632"/>
+        </scene>
+        <!--Transaction Status-->
+        <scene sceneID="3t9-ht-9TC">
+            <objects>
+                <viewController id="g3N-wU-IvZ" customClass="TransactionStatusController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAn-O8-0hZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ywK-92-y2o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction List With Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQo-Hr-txV">
+                                <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.098039215690000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LfV-Xo-8Nl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gMU-k2-AWY">
+                                <rect key="frame" x="0.0" y="114" width="320" height="454"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionTableCell" id="31W-uw-N20" customClass="TransactionTableCell" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="31W-uw-N20" id="ooQ-p5-imm">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnT-hx-Ply">
+                                                    <rect key="frame" x="139" y="39.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="ZnT-hx-Ply" firstAttribute="centerY" secondItem="ooQ-p5-imm" secondAttribute="centerY" id="bDr-Fl-MTk"/>
+                                                <constraint firstItem="ZnT-hx-Ply" firstAttribute="centerX" secondItem="ooQ-p5-imm" secondAttribute="centerX" id="huZ-70-ZGG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="testLabel" destination="ZnT-hx-Ply" id="3PI-qB-rpy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="g3N-wU-IvZ" id="agH-S3-o3W"/>
+                                    <outlet property="delegate" destination="g3N-wU-IvZ" id="2S3-Pl-j0l"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ywK-92-y2o" firstAttribute="top" secondItem="XAn-O8-0hZ" secondAttribute="top" id="12G-up-Uip"/>
+                            <constraint firstItem="gMU-k2-AWY" firstAttribute="leading" secondItem="ebz-vm-vSQ" secondAttribute="leading" id="1V9-gh-AQu"/>
+                            <constraint firstItem="TQo-Hr-txV" firstAttribute="trailing" secondItem="ebz-vm-vSQ" secondAttribute="trailing" id="A33-xF-nqW"/>
+                            <constraint firstItem="ebz-vm-vSQ" firstAttribute="trailing" secondItem="gMU-k2-AWY" secondAttribute="trailing" id="Azx-Qb-WEK"/>
+                            <constraint firstItem="TQo-Hr-txV" firstAttribute="top" secondItem="ebz-vm-vSQ" secondAttribute="top" id="FAN-Th-cTk"/>
+                            <constraint firstAttribute="bottom" secondItem="ywK-92-y2o" secondAttribute="bottom" id="dyL-Gs-waV"/>
+                            <constraint firstItem="ebz-vm-vSQ" firstAttribute="trailing" secondItem="ywK-92-y2o" secondAttribute="trailing" id="eJY-OW-8l8"/>
+                            <constraint firstItem="TQo-Hr-txV" firstAttribute="leading" secondItem="ebz-vm-vSQ" secondAttribute="leading" id="eV1-tp-hMp"/>
+                            <constraint firstItem="ebz-vm-vSQ" firstAttribute="bottom" secondItem="gMU-k2-AWY" secondAttribute="bottom" id="seg-kM-asr"/>
+                            <constraint firstItem="ywK-92-y2o" firstAttribute="leading" secondItem="ebz-vm-vSQ" secondAttribute="leading" id="w2R-JJ-I0n"/>
+                            <constraint firstItem="gMU-k2-AWY" firstAttribute="top" secondItem="TQo-Hr-txV" secondAttribute="bottom" id="zoZ-oh-sll"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ebz-vm-vSQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transaction Status" id="Qkv-5D-viU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEb-xh-UID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8340" y="-850.35211267605632"/>
         </scene>
         <!--Add Recipient-->
         <scene sceneID="0wo-D5-FBA">

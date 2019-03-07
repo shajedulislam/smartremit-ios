@@ -31,6 +31,7 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         NotificationCenter.default.addObserver(self, selector: #selector(showAddRecipient), name: NSNotification.Name("showAddRecipient"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showUploadFile), name: NSNotification.Name("showUploadFile"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showPaymentLimitation), name: NSNotification.Name("showPaymentLimitation"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showTransactionStatus), name: NSNotification.Name("showTransactionStatus"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(popToRootViewController), name: NSNotification.Name("popToRootViewController"), object: nil)
     
         showBenLabel()
@@ -95,6 +96,10 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     @objc func showPaymentLimitation()
     {
         performSegue(withIdentifier: "PaymentLimitation", sender: nil)
+    }
+    @objc func showTransactionStatus()
+    {
+        performSegue(withIdentifier: "TransactionStatus", sender: nil)
     }
     
     @objc func popToRootViewController()
