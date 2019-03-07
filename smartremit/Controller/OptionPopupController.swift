@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BankDetailsOptionPopupController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class OptionPopupController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var popupHeaderText: UILabel!
     

@@ -104,9 +104,9 @@ class BankDetailsController: UIViewController{
     func optionReceiver(optionName : String)
     {
 
-        let sb = UIStoryboard(name: "BankDetailsOptionPopup", bundle: nil)
+        let sb = UIStoryboard(name: "OptionPopup", bundle: nil)
         
-        let popup = sb.instantiateInitialViewController()! as! BankDetailsOptionPopupController
+        let popup = sb.instantiateInitialViewController()! as! OptionPopupController
         popup.optionToShow = optionName
         
         self.present(popup, animated: true)

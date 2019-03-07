@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddRecipientController: UIViewController {
+class AddRecipientController: UIViewController,UIScrollViewDelegate {
     
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     @IBOutlet weak var OptionsContainerStack: UIStackView!
@@ -60,7 +60,14 @@ class AddRecipientController: UIViewController {
         toBankAccountBtn.borderColorForBtn()
         cashPickupBtn.noBorderForBtn()
     }
-    
+
+//    func scrollViewDidScroll(_ scrollView: UIScrollView)
+//    {
+//        if (scrollView.contentOffset.y <= -50)
+//        {
+//            //print("At Top")
+//        }
+//    }
 }
 
     extension UIButton

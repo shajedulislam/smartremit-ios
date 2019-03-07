@@ -25,9 +25,12 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
+        
+        
         NotificationCenter.default.addObserver(self, selector: #selector(showResetPassword), name: NSNotification.Name("showResetPassword"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showAddRecipient), name: NSNotification.Name("showAddRecipient"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showUploadFile), name: NSNotification.Name("showUploadFile"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showPaymentLimitation), name: NSNotification.Name("showPaymentLimitation"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(popToRootViewController), name: NSNotification.Name("popToRootViewController"), object: nil)
     
         showBenLabel()
@@ -87,6 +90,11 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
     @objc func showUploadFile()
     {
         performSegue(withIdentifier: "UploadFile", sender: nil)
+    }
+    
+    @objc func showPaymentLimitation()
+    {
+        performSegue(withIdentifier: "PaymentLimitation", sender: nil)
     }
     
     @objc func popToRootViewController()

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bank Details Option Popup Controller-->
+        <!--Option Popup Controller-->
         <scene sceneID="1Uo-Xt-4lO">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="6St-uh-8hf" customClass="BankDetailsOptionPopupController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="6St-uh-8hf" customClass="OptionPopupController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWy-ej-zkA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

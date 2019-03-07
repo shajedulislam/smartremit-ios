@@ -41,8 +41,8 @@ class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         if ((UserDefaults.standard.string(forKey: "verDone")) == "verDone")//Enabled Using Keyvalue Trick If Sidebar Tapped After Logion
         {
-            menuOptions = ["Home","Add Recipient","Reset Password","Upload File"]
-            menuOptionsIcon = [UIImage(named: "home_green")!,UIImage(named: "addRecipient")!,UIImage(named: "password")!,UIImage(named: "upload")!]
+            menuOptions = ["Home","Add Recipient","Payment Limitation","Reset Password","Upload File"]
+            menuOptionsIcon = [UIImage(named: "home_green")!,UIImage(named: "addRecipient")!,UIImage(named: "paymentlimit")!,UIImage(named: "password")!,UIImage(named: "upload")!]
             
             sideBarTable.reloadData()
             UserDefaults.standard.set("verNotDone", forKey: "verDone")
@@ -106,6 +106,12 @@ class SidemenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
         {
             NotificationCenter.default.post(name: NSNotification.Name("popToRootViewController"), object: nil)
             NotificationCenter.default.post(name: NSNotification.Name("showAddRecipient"), object: nil)
+            self.revealViewController()?.rightRevealToggle(self)
+        }
+        else if(menuOptions[indexPath.row] == "Payment Limitation")
+        {
+            NotificationCenter.default.post(name: NSNotification.Name("popToRootViewController"), object: nil)
+            NotificationCenter.default.post(name: NSNotification.Name("showPaymentLimitation"), object: nil)
             self.revealViewController()?.rightRevealToggle(self)
         }
     }

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Getstarted Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="GetStartedStory" id="BYZ-38-t0r" customClass="ViewController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetStartedStory" id="BYZ-38-t0r" customClass="GetstartedController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="pdS-Vi-Wi3" kind="show" id="qlT-fw-YqX"/>
+                                    <action selector="getStartedBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsv-dx-bPb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 GBP = 100.00 BDT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rB6-Qs-845">
@@ -161,6 +161,10 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="beneficiaryGetsTxtFieldEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="bOW-UV-I2S"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="zWW-Mg-MBV"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiX-uG-qXV" customClass="CustomButtonHalfRounded" customModule="smartremit" customModuleProvider="target">
                                         <rect key="frame" x="198" y="0.0" width="90" height="50"/>
@@ -175,6 +179,9 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="BDTGBPclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSJ-rk-b3X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -196,6 +203,10 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="youPayTxtFieldEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="Cs3-aP-iCQ"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="FoT-Vx-FHd"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxg-OD-Stj" customClass="CustomButtonHalfRounded" customModule="smartremit" customModuleProvider="target">
                                         <rect key="frame" x="198" y="0.0" width="90" height="50"/>
@@ -210,6 +221,9 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="BDTGBPclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1j-TE-QcL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -292,6 +306,16 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="gui-ss-4v8"/>
+                    <connections>
+                        <outlet property="BDTbutton" destination="fiX-uG-qXV" id="RuS-nl-gGY"/>
+                        <outlet property="FeesLabelGetStarted" destination="8nq-Vy-6AM" id="kOL-lt-N6D"/>
+                        <outlet property="GBPbutton" destination="cxg-OD-Stj" id="EhE-aU-syu"/>
+                        <outlet property="benificiaryGetsTxtField" destination="rz6-ql-QUr" id="ZyY-46-Vxg"/>
+                        <outlet property="feesLabelGetStarted" destination="8nq-Vy-6AM" id="3PV-FH-Psi"/>
+                        <outlet property="oneGBPequalLabel" destination="rB6-Qs-845" id="AS3-KT-j4Q"/>
+                        <outlet property="youPayTxtField" destination="BBn-V4-8xL" id="U6h-Ma-FUQ"/>
+                        <segue destination="pdS-Vi-Wi3" kind="show" identifier="Login" id="XTS-i5-rJc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,7 +366,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwb-PF-0FI">
-                                                            <rect key="frame" x="0.0" y="14" width="1024" height="32"/>
+                                                            <rect key="frame" x="0.0" y="14" width="320" height="32"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-hd-bOm">
                                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="32"/>
@@ -354,7 +378,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3lK-JH-e1j">
-                                                                    <rect key="frame" x="15" y="0.0" width="1009" height="32"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="305" height="32"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-JV-b5m">
                                                                             <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -368,13 +392,13 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-NV-GFQ">
-                                                                            <rect key="frame" x="40" y="0.0" width="969" height="32"/>
+                                                                            <rect key="frame" x="40" y="0.0" width="265" height="32"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="32" id="8I7-OT-eA9">
                                                                                     <variation key="heightClass=regular-widthClass=regular" constant="45"/>
                                                                                 </constraint>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="23"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <variation key="heightClass=regular-widthClass=regular">
@@ -1592,7 +1616,7 @@
                                                     <rect key="frame" x="0.0" y="13.5" width="50" height="50"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_pencil-512" translatesAutoresizingMaskIntoConstraints="NO" id="0qX-fY-DIC">
-                                                    <rect key="frame" x="976" y="13.5" width="48" height="48"/>
+                                                    <rect key="frame" x="272" y="13.5" width="48" height="48"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f44-Mf-Awh">
                                                     <rect key="frame" x="56" y="11" width="197" height="33"/>
@@ -1656,6 +1680,7 @@
                         <segue destination="j9y-by-D1g" kind="show" identifier="ResetPassword" id="8vG-fl-BJL"/>
                         <segue destination="pqH-HY-S4k" kind="show" identifier="AddRecipient" id="mHe-jy-gw5"/>
                         <segue destination="xuQ-CL-Akl" kind="show" identifier="UploadFile" id="Mr2-kf-GDp"/>
+                        <segue destination="Wyp-Pt-j9h" kind="show" identifier="PaymentLimitation" id="OMv-qz-EmF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIs-6O-fVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2433,6 +2458,195 @@
             </objects>
             <point key="canvasLocation" x="6073" y="-850"/>
         </scene>
+        <!--Payment Limitation-->
+        <scene sceneID="8jG-FP-hNE">
+            <objects>
+                <viewController id="Wyp-Pt-j9h" customClass="PaymentLimitationController" customModule="smartremit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKM-fm-cXI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="peY-hE-rrt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-Js-Xyt">
+                                <rect key="frame" x="1.5" y="84" width="317" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DURATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTh-ie-15h" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="50"/>
+                                        <color key="backgroundColor" red="0.82352941176470584" green="0.039215686274509803" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ba2-QF-1HN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU SENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opZ-dw-YDc" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="107.5" y="0.0" width="102" height="50"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FQK-Bj-ccS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU CAN SEND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyM-mu-P82" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="214.5" y="0.0" width="102.5" height="50"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bFO-nD-UHB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vKb-Ff-gk1">
+                                <rect key="frame" x="1.5" y="154" width="317" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN 30 DAYS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCr-vc-otB" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="YVm-a5-AR8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywa-qh-9oV" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="107.5" y="0.0" width="102" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Rlt-L7-kRR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW1-Ac-dMS" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="214.5" y="0.0" width="102.5" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="nc8-yn-y2Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KNx-NA-Bei">
+                                <rect key="frame" x="1.5" y="234" width="317" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN 365 DAYS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RW-xH-WPc" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="gcY-ga-LKc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uY-As-aWq" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="107.5" y="0.0" width="102" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="znA-7f-ONR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6000$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNr-wi-WXf" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="214.5" y="0.0" width="102.5" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ZtU-Iv-fEe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-p9-8Ii">
+                                <rect key="frame" x="1.5" y="194" width="317" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN 90 DAYS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWp-VH-OrO" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="kSK-n0-FUi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-ho-gGe" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="107.5" y="0.0" width="102" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="o2V-b3-b77"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4000$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghz-Uv-P54" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
+                                        <rect key="frame" x="214.5" y="0.0" width="102.5" height="20"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.039215686270000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ai1-RI-O3B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="opZ-dw-YDc" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="25N-gY-RVK"/>
+                            <constraint firstItem="vKb-Ff-gk1" firstAttribute="top" secondItem="7ef-Js-Xyt" secondAttribute="bottom" constant="20" id="3sf-Sq-5T6"/>
+                            <constraint firstItem="3uY-As-aWq" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="9MX-Vz-2C7"/>
+                            <constraint firstItem="KNx-NA-Bei" firstAttribute="top" secondItem="YuO-p9-8Ii" secondAttribute="bottom" constant="20" id="DeX-zn-Yjh"/>
+                            <constraint firstItem="Ywa-qh-9oV" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="EaC-A9-Hod"/>
+                            <constraint firstAttribute="bottom" secondItem="peY-hE-rrt" secondAttribute="bottom" id="H3V-hb-PSV"/>
+                            <constraint firstItem="7ef-Js-Xyt" firstAttribute="top" secondItem="SdE-b3-vUa" secondAttribute="top" constant="20" id="HhG-lB-13z"/>
+                            <constraint firstItem="vKb-Ff-gk1" firstAttribute="centerX" secondItem="bKM-fm-cXI" secondAttribute="centerX" id="MhT-Rz-h8l"/>
+                            <constraint firstItem="ZNr-wi-WXf" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="OdH-zh-z09"/>
+                            <constraint firstItem="KNx-NA-Bei" firstAttribute="centerX" secondItem="bKM-fm-cXI" secondAttribute="centerX" id="PNo-qP-q4d"/>
+                            <constraint firstItem="YuO-p9-8Ii" firstAttribute="centerX" secondItem="bKM-fm-cXI" secondAttribute="centerX" id="QjL-pl-PEs"/>
+                            <constraint firstItem="NCr-vc-otB" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="SNv-RK-qtC"/>
+                            <constraint firstItem="CW1-Ac-dMS" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="W40-Lm-4IS"/>
+                            <constraint firstItem="SdE-b3-vUa" firstAttribute="trailing" secondItem="peY-hE-rrt" secondAttribute="trailing" id="aiJ-k8-Lxb"/>
+                            <constraint firstItem="kTh-ie-15h" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="c3X-j9-CDf"/>
+                            <constraint firstItem="BqH-ho-gGe" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="dVu-cr-riu"/>
+                            <constraint firstItem="peY-hE-rrt" firstAttribute="leading" secondItem="SdE-b3-vUa" secondAttribute="leading" id="deR-lX-dxo"/>
+                            <constraint firstItem="peY-hE-rrt" firstAttribute="top" secondItem="bKM-fm-cXI" secondAttribute="top" id="eGx-Bd-vbl"/>
+                            <constraint firstItem="7ef-Js-Xyt" firstAttribute="centerX" secondItem="bKM-fm-cXI" secondAttribute="centerX" id="hS0-KU-9Q9"/>
+                            <constraint firstItem="NyM-mu-P82" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="hvU-PW-tog"/>
+                            <constraint firstItem="4RW-xH-WPc" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="iuD-NK-eAV"/>
+                            <constraint firstItem="JWp-VH-OrO" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="mNA-Zg-ZKJ"/>
+                            <constraint firstItem="ghz-Uv-P54" firstAttribute="width" secondItem="bKM-fm-cXI" secondAttribute="width" multiplier="0.32" id="oza-HP-ayr"/>
+                            <constraint firstItem="YuO-p9-8Ii" firstAttribute="top" secondItem="vKb-Ff-gk1" secondAttribute="bottom" constant="20" id="uOf-kN-M6h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SdE-b3-vUa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Payment Limitation" id="ngJ-2C-ex1">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="navigation_button" id="oX1-iX-efh"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tf-de-XKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7231.875" y="-850.35211267605632"/>
+        </scene>
         <!--Add Recipient-->
         <scene sceneID="0wo-D5-FBA">
             <objects>
@@ -2708,6 +2922,9 @@
                                     <constraint firstItem="0BV-3n-rm7" firstAttribute="leading" secondItem="wqL-sk-N0L" secondAttribute="leading" id="bxV-2B-LGt"/>
                                     <constraint firstAttribute="bottom" secondItem="0BV-3n-rm7" secondAttribute="bottom" id="gG2-U9-A2W"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="pqH-HY-S4k" id="dTe-q5-puf"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
