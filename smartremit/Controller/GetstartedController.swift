@@ -17,8 +17,8 @@ class GetstartedController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var youPayTxtField: CustomTextFieldHalfRound!
     @IBOutlet weak var feesLabelGetStarted: UILabel!
     
-    var oneGBPtoBDT = 110
-    
+    let oneGBPtoBDT:Double = 110.00
+
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -26,16 +26,79 @@ class GetstartedController: UIViewController, UITextFieldDelegate {
         oneGBPequalLabel.text = "1 GBP = \(oneGBPtoBDT) BDT"
     }
     
-    @IBAction func BDTGBPclick(_ sender: UIButton)
+    @IBAction func BDTGBPclick(_ sender: Any)
     {
-        if(sender.titleLabel?.text == "BDT")
-        {
+        let beforeChangeValue = BDTbutton.titleLabel?.text
+        
+        let sb = UIStoryboard(name: "OptionPopup", bundle: nil)
+        
+        let popup = sb.instantiateInitialViewController()! as! OptionPopupController
+        popup.optionToShow = "BDTGBP"
+        
+        self.present(popup, animated: true)
+        
+        popup.onDone = { (data) in
             
-        }
-        else if(sender.titleLabel?.text == "GBP")
-        {
+            if(data == "BDT")
+            {
+                self.BDTbutton.setTitle("BDT", for: .normal)
+                self.GBPbutton.setTitle("GBP", for: .normal)
+            }
+            else if (data == "GBP")
+            {
+                self.BDTbutton.setTitle("GBP", for: .normal)
+                self.GBPbutton.setTitle("BDT", for: .normal)
+            }
             
+            
+            if(beforeChangeValue != data)
+            {
+                self.benificiaryGetsTxtField.text = ""
+                self.youPayTxtField.text = ""
+            }
         }
+        
+    }
+    @IBAction func GBPBDTclick(_ sender: Any) {
+        
+        let beforeChangeValue = GBPbutton.titleLabel?.text
+        
+        let sb = UIStoryboard(name: "OptionPopup", bundle: nil)
+        
+        let popup = sb.instantiateInitialViewController()! as! OptionPopupController
+        popup.optionToShow = "BDTGBP"
+        
+        self.present(popup, animated: true)
+        
+        popup.onDone = { (data) in
+            
+            if(data == "BDT")
+            {
+                self.GBPbutton.setTitle("BDT", for: .normal)
+                self.BDTbutton.setTitle("GBP", for: .normal)
+            }
+            else if (data == "GBP")
+            {
+                self.GBPbutton.setTitle("GBP", for: .normal)
+                self.BDTbutton.setTitle("BDT", for: .normal)
+            }
+            
+            if(beforeChangeValue != data)
+            {
+                self.benificiaryGetsTxtField.text = ""
+                self.youPayTxtField.text = ""
+            }
+        }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if (textField == benificiaryGetsTxtField || textField == youPayTxtField ) {
+            let allowedCharacters = CharacterSet(charactersIn:"0123456789.")//Here change this characters based on your requirement
+            let characterSet = CharacterSet(charactersIn: string)
+            return allowedCharacters.isSuperset(of: characterSet)
+        }
+        return true
     }
     
     @IBAction func getStartedBtn(_ sender: Any) {
@@ -43,16 +106,67 @@ class GetstartedController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func beneficiaryGetsTxtFieldEditing(_ sender: Any) {
-        print("Ben Gets on edit")
+        
+        let countdots =  (benificiaryGetsTxtField.text?.components(separatedBy: (".")).count)! - 1
+        
+        if(BDTbutton.titleLabel?.text == "BDT")
+        {
+            if(benificiaryGetsTxtField.text != "" && countdots < 2)
+            {
+                let benGets = Double(benificiaryGetsTxtField.text!)! / oneGBPtoBDT
+                
+                youPayTxtField.text = String(format: "%.2f", benGets)
+            }
+            else
+            {
+                youPayTxtField.text = ""
+            }
+        }
+        else if(BDTbutton.titleLabel?.text == "GBP")
+        {
+            if(benificiaryGetsTxtField.text != "" && countdots < 2)
+            {
+                let benGets = Double(benificiaryGetsTxtField.text!)! * oneGBPtoBDT
+                
+                youPayTxtField.text = String(format: "%.2f", benGets)
+            }
+            else
+            {
+                youPayTxtField.text = ""
+            }
+        }
     }
     @IBAction func youPayTxtFieldEditing(_ sender: Any) {
-        print("You pay on edit")
-    }
-    
-    func optionReceivier(optionName : String)
-    {
         
+        let countdots =  (youPayTxtField.text?.components(separatedBy: (".")).count)! - 1
+        
+        if(GBPbutton.titleLabel?.text == "BDT")
+        {
+            if(youPayTxtField.text != "" && countdots < 2)
+            {
+                let youPay = Double(youPayTxtField.text!)! / oneGBPtoBDT
+                
+                benificiaryGetsTxtField.text = String(format: "%.2f", youPay)
+            }
+            else
+            {
+                benificiaryGetsTxtField.text = ""
+            }
+        }
+        else if(GBPbutton.titleLabel?.text == "GBP" )
+        {
+            if(youPayTxtField.text != "" && countdots < 2)
+            {
+                let youPay = Double(youPayTxtField.text!)! * oneGBPtoBDT
+                
+                benificiaryGetsTxtField.text = String(format: "%.2f", youPay)
+            }
+            else
+            {
+                benificiaryGetsTxtField.text = ""
+            }
+        }
     }
-    
+
 }
 

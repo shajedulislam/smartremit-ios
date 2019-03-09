@@ -8,8 +8,12 @@
 
 import UIKit
 
-class Login_verificationController: UIViewController {
+class Login_verificationController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var verificationTxtFieldOne: CustomTextFieldHalfRound!
+    @IBOutlet weak var verificationTxtFieldTwo: CustomTextFieldHalfRound!
+    @IBOutlet weak var verificationTxtFieldThree: CustomTextFieldHalfRound!
+    @IBOutlet weak var verificationTxtFieldFour: CustomTextFieldHalfRound!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,15 +22,58 @@ class Login_verificationController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
     
-    @IBAction func VerificationDone(_ sender: Any) {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        UserDefaults.standard.set("verDone", forKey: "verDone")
-        
-        NotificationCenter.default.post(name: NSNotification.Name("enableSideBarOptions"), object: nil)
-
-        self.revealViewController().rightViewController.performSegue(withIdentifier: "BeneficiaryList", sender: self.revealViewController().rightViewController)
+        if (textField == verificationTxtFieldOne || textField == verificationTxtFieldTwo || textField == verificationTxtFieldThree || textField == verificationTxtFieldFour) {
+            let allowedCharacters = CharacterSet(charactersIn:"0123456789")//Here change this characters based on your requirement
+            let characterSet = CharacterSet(charactersIn: string)
+            return allowedCharacters.isSuperset(of: characterSet)
+        }
+        return true
     }
     
-  
+    
+    
+    
+    
+    @IBAction func toMoveNextFieldAndVerify(_ sender: UITextField) {
+        if((sender.text?.count)! < 2 && (sender.text?.count)! > 0 )
+        {
+            if(sender == verificationTxtFieldOne)
+            {
+                verificationTxtFieldTwo.becomeFirstResponder()
+            }
+            else if(sender == verificationTxtFieldTwo)
+            {
+                verificationTxtFieldThree.becomeFirstResponder()
+            }
+            else if(sender == verificationTxtFieldThree)
+            {
+                verificationTxtFieldFour.becomeFirstResponder()
+            }
+            else if(sender == verificationTxtFieldFour)
+            {
+                UserDefaults.standard.set("verDone", forKey: "verDone")
+                
+                NotificationCenter.default.post(name: NSNotification.Name("enableSideBarOptions"), object: nil)
+                
+                self.revealViewController().rightViewController.performSegue(withIdentifier: "BeneficiaryList", sender: self.revealViewController().rightViewController)
+            }
+        }
+        else
+        {
+            sender.deleteBackward()
+        }
+    }
+    
+    @IBAction func resendCode(_ sender: Any) {
+        verificationTxtFieldOne.text = ""
+        verificationTxtFieldTwo.text = ""
+        verificationTxtFieldThree.text = ""
+        verificationTxtFieldFour.text = ""
+        
+        verificationTxtFieldOne.becomeFirstResponder()
+    }
+    
 
 }

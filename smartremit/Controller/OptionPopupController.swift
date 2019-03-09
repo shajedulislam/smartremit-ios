@@ -23,7 +23,6 @@ class OptionPopupController: UIViewController, UIPickerViewDelegate, UIPickerVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         if(optionToShow == "purpose")
         {
             popupHeaderText.text = "Choose Purpose"
@@ -60,6 +59,13 @@ class OptionPopupController: UIViewController, UIPickerViewDelegate, UIPickerVie
             optionList = ["12345","54321"]
             choosenOption = optionList[0]
         }
+        else if(optionToShow == "BDTGBP")
+        {
+            popupHeaderText.text = "Choose Currency"
+            optionList = ["BDT","GBP"]
+            choosenOption = optionList[0]
+        }
+       
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

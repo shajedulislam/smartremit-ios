@@ -30,7 +30,7 @@ class UploadFileController: UIViewController, UIImagePickerControllerDelegate, U
         let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ResetPasswordController.back(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
 
-        imageView.isHidden = true
+        //imageView.isHidden = true
     }
     
     @objc func back(sender: UIBarButtonItem) {
@@ -41,7 +41,7 @@ class UploadFileController: UIViewController, UIImagePickerControllerDelegate, U
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
     {
-        imageView.isHidden = false
+        //imageView.isHidden = false
         selectBtnForFileUp.setTitle("Upload", for: .normal)
         selectionImg = true
         
@@ -69,8 +69,7 @@ class UploadFileController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func fileUploadCancelBtnTapped(_ sender: Any) {
         
-        imageView.image = nil
-        imageView.isHidden = true
+        imageView.image = #imageLiteral(resourceName: "no_image_available")
         selectBtnForFileUp.setTitle("Select", for: .normal)
         selectionImg = false
         
@@ -91,8 +90,7 @@ class UploadFileController: UIViewController, UIImagePickerControllerDelegate, U
 
     func uploadImage()
     {
-        imageView.image = nil
-        imageView.isHidden = true
+        imageView.image = #imageLiteral(resourceName: "no_image_available")
         selectBtnForFileUp.setTitle("Select", for: .normal)
     }
 }
