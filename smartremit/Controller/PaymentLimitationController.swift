@@ -10,21 +10,19 @@ import UIKit
 
 class PaymentLimitationController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
     
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+        menuBtn.target = revealViewController()
+        menuBtn.action = #selector(SWRevealViewController.rightRevealToggle(_:))
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }

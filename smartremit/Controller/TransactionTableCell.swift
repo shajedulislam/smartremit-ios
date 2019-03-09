@@ -9,7 +9,12 @@
 import UIKit
 
 class TransactionTableCell: UITableViewCell {
-    @IBOutlet weak var testLabel: UILabel!
+    
+    @IBOutlet weak var referenceNoLabel: UILabel!
+    @IBOutlet weak var beneficiaryLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var statusColorBar: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
