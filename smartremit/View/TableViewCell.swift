@@ -17,7 +17,8 @@ class TableViewCell: UITableViewCell {
    
     @IBOutlet var label_name: UILabel!
     @IBOutlet var label_trnsHistory: UILabel!
-   @IBOutlet var sent: UILabel!
+    @IBOutlet weak var updateBtn: UIButton!
+    @IBOutlet var sent: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

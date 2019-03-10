@@ -32,6 +32,9 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         NotificationCenter.default.addObserver(self, selector: #selector(showUploadFile), name: NSNotification.Name("showUploadFile"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showPaymentLimitation), name: NSNotification.Name("showPaymentLimitation"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showTransactionStatus), name: NSNotification.Name("showTransactionStatus"), object: nil)
+        
+       
+        
         NotificationCenter.default.addObserver(self, selector: #selector(popToRootViewController), name: NSNotification.Name("popToRootViewController"), object: nil)
     
         showBenLabel()
@@ -68,10 +71,10 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         cell.label_name.textColor = UIColor.white
         cell.label_trnsHistory.text = "Trans: " + String(benList[indexPath.row].getNoOfTrns()) + ", Sent (GBP): " + String(benList[indexPath.row].getSent())
         cell.label_trnsHistory.textColor = UIColor.white
+        cell.updateBtn.addTarget(self, action: #selector(BeneficiraryListController.showUpdateRecipient(_:)), for: .touchUpInside)
         
         return cell
     }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
@@ -102,6 +105,12 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
         performSegue(withIdentifier: "TransactionStatus", sender: nil)
     }
     
+    @objc func showUpdateRecipient(_ sender: UIButton)
+    {
+        NotificationCenter.default.post(name: NSNotification.Name("popToRootViewController"), object: nil)
+        performSegue(withIdentifier: "UpdateRecipient", sender: nil)
+    }
+    
     @objc func popToRootViewController()
     {
         navigationController?.popToRootViewController(animated: false)
@@ -126,3 +135,4 @@ class BeneficiraryListController: UIViewController, UITableViewDataSource, UITab
 //    }
 
 }
+
