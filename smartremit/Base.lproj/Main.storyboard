@@ -366,7 +366,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwb-PF-0FI">
-                                                            <rect key="frame" x="0.0" y="14" width="375" height="32"/>
+                                                            <rect key="frame" x="0.0" y="14" width="320" height="32"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-hd-bOm">
                                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="32"/>
@@ -378,7 +378,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3lK-JH-e1j">
-                                                                    <rect key="frame" x="15" y="0.0" width="360" height="32"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="305" height="32"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-JV-b5m">
                                                                             <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -392,7 +392,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-NV-GFQ">
-                                                                            <rect key="frame" x="40" y="0.0" width="320" height="32"/>
+                                                                            <rect key="frame" x="40" y="0.0" width="265" height="32"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="32" id="8I7-OT-eA9">
                                                                                     <variation key="heightClass=regular-widthClass=regular" constant="45"/>
@@ -1652,7 +1652,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ru-Vd-crC">
-                                                    <rect key="frame" x="320" y="12.5" width="50" height="50"/>
+                                                    <rect key="frame" x="265" y="12.5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="Dtw-cv-8RO"/>
                                                         <constraint firstAttribute="height" constant="50" id="zXV-RD-zSV"/>
@@ -2789,7 +2789,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5MH-KN-daT">
-                                                    <rect key="frame" x="9.5" y="8" width="356" height="83.5"/>
+                                                    <rect key="frame" x="8" y="8" width="304" height="83.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPK-AD-kqN">
                                                             <rect key="frame" x="0.0" y="0.0" width="6" height="83.5"/>
@@ -2799,7 +2799,7 @@
                                                             </constraints>
                                                         </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="alD-4M-eTe">
-                                                            <rect key="frame" x="12" y="0.0" width="344" height="83.5"/>
+                                                            <rect key="frame" x="12" y="0.0" width="292" height="83.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference No:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnT-hx-Ply">
                                                                     <rect key="frame" x="0.0" y="0.0" width="129" height="23"/>
@@ -2912,11 +2912,11 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="85"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTt-rq-iuA" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="cLr-N7-gNM"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -2939,11 +2939,11 @@
                                                                 <rect key="frame" x="0.0" y="95" width="288" height="85"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csb-tD-hZn" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="dh3-xu-Bdf"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -2966,11 +2966,11 @@
                                                                 <rect key="frame" x="0.0" y="190" width="288" height="85"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHv-yl-01r" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="7UH-2o-SbC"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -2993,11 +2993,11 @@
                                                                 <rect key="frame" x="0.0" y="285" width="288" height="85"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIf-SV-bGJ" customClass="LabelShadow" customModule="smartremit" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="00b-aG-Vlp"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -3029,7 +3029,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="50" id="cev-Te-gTE"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                         <state key="normal" title="Bank Name">
                                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
@@ -3039,7 +3039,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="50" id="hSJ-WP-KJ9"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                         <state key="normal" title="Branch Name">
                                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
@@ -3049,7 +3049,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="50" id="CAj-u7-z9q"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                         <state key="normal" title="District Name">
                                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
@@ -3105,11 +3105,11 @@
                                                         <rect key="frame" x="0.0" y="600" width="288" height="90"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDm-GR-mj2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="32c-aH-nEo"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -3136,7 +3136,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Mes-H6-XsM"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                 <state key="normal" title="Update">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
